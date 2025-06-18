@@ -1,0 +1,21 @@
+# system info ed_sim_mem on 2025.06.02.16:07:25
+system_info:
+name,value
+DEVICE,A5ED065BB32AE6SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for ed_sim_mem on 2025.06.02.16:07:25
+files:
+filepath,kind,attributes,module,is_top
+sim/ed_sim_mem.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim_mem,true
+emif_io96b_mem_model_lpddr4_100/sim/altera_emif_lpddr4_model_dram_component.sv,SYSTEM_VERILOG,,altera_emif_lpddr4_model_top,false
+emif_io96b_mem_model_lpddr4_100/sim/altera_emif_lpddr4_model_channel.sv,SYSTEM_VERILOG,,altera_emif_lpddr4_model_top,false
+emif_io96b_mem_model_lpddr4_100/sim/altera_emif_lpddr4_model_rank.sv,SYSTEM_VERILOG,,altera_emif_lpddr4_model_top,false
+emif_io96b_mem_model_lpddr4_100/sim/altera_emif_lpddr4_model_top.sv,SYSTEM_VERILOG,,altera_emif_lpddr4_model_top,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ed_sim_mem.emif_io96b_mem_model_lpddr4_inst,altera_emif_lpddr4_model_top

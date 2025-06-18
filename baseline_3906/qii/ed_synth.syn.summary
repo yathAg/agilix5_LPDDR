@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Mon Jun  2 16:13:58 2025
+Revision Name : ed_synth
+Top-level Entity Name : ed_synth
+Family : Agilex 5
+Quartus Prime Version : 24.3.1 Build 102 01/14/2025 SC Pro Edition
+Device : A5ED065BB32AE6SR0
+Logic utilization estimate (in ALMs) : 18,203 / 222,400 ( 8 % )
+Total dedicated logic registers : 62095
+Estimated DSP Blocks Post-Merging : 0

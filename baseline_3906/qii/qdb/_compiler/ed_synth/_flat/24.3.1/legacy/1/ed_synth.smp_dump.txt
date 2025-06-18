@@ -1,0 +1,103 @@
+
+State Machine - Summary
+
+State Machine - traffic_generator|hydra_inst|remote_access_jamb|jtag_phy_embedded_in_jtag_master|normal.jtag_dc_streaming|jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - traffic_generator|hydra_inst|remote_access_jamb|jtag_phy_embedded_in_jtag_master|normal.jtag_dc_streaming|jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_READ_DATA 1 1 0 
+read_state.ST_PADDED 1 0 1 
+
+State Machine - emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|jtag_phy_embedded_in_jtag_master|normal.jtag_dc_streaming|jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|jtag_phy_embedded_in_jtag_master|normal.jtag_dc_streaming|jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_READ_DATA 1 1 0 
+read_state.ST_PADDED 1 0 1 
+
+State Machine - traffic_generator|hydra_inst|mm_interconnect_0|global_csr_apb3_agent|state
+Name state.SEND_RESPONSE state.ACCESS state.SET_UP state.IDLE 
+state.IDLE 0 0 0 0 
+state.SET_UP 0 0 1 1 
+state.ACCESS 0 1 0 1 
+state.SEND_RESPONSE 1 0 0 1 
+
+State Machine - traffic_generator|hydra_inst|remote_access_jamb|transacto|p2m|state
+Name state.READ_SEND_WAIT state.READ_DATA_WAIT state.READ_SEND_ISSUE state.READ_CMD_WAIT state.WRITE_WAIT state.RETURN_PACKET state.READ_ASSERT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.READY 
+state.READY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - traffic_generator|hydra_inst|global_csr|global_csr_impl|global_csr_registers|state
+Name state.NOTREADY state.TRANSACTION state.IDLE state.RESET 
+state.RESET 0 0 0 0 
+state.IDLE 0 0 1 1 
+state.TRANSACTION 0 1 0 1 
+state.NOTREADY 1 0 0 1 
+
+State Machine - emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.arbit_and_interconnect|gen_arbit.mm_interconnect_1|cal_arch_0_s0_axi4lite_axi4_lite_wr_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.arbit_and_interconnect|gen_arbit.mm_interconnect_1|cal_arch_0_s0_axi4lite_axi4_lite_rd_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - axil_driver_0|emif_ph2_axil_driver_inst|ed_synth_axil_driver_0_emif_ph2_axil_driver_100_qakapty_axil_driver_inst|r_fsm_cs
+Name r_fsm_cs.RD_TERMINATE r_fsm_cs.RD_INIT_DELAY r_fsm_cs.RD_IDLE r_fsm_cs.RD_WAIT_RRESP r_fsm_cs.RD_SEND_ARADDR r_fsm_cs.WAIT_NOC_INIT 
+r_fsm_cs.WAIT_NOC_INIT 0 0 0 0 0 0 
+r_fsm_cs.RD_SEND_ARADDR 0 0 0 0 1 1 
+r_fsm_cs.RD_WAIT_RRESP 0 0 0 1 0 1 
+r_fsm_cs.RD_IDLE 0 0 1 0 0 1 
+r_fsm_cs.RD_INIT_DELAY 0 1 0 0 0 1 
+r_fsm_cs.RD_TERMINATE 1 0 0 0 0 1 
+
+State Machine - emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|transacto|p2m|state
+Name state.READ_SEND_WAIT state.READ_DATA_WAIT state.READ_SEND_ISSUE state.READ_CMD_WAIT state.WRITE_WAIT state.RETURN_PACKET state.READ_ASSERT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.READY 
+state.READY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

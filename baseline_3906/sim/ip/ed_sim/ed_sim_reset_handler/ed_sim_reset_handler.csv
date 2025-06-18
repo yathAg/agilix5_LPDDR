@@ -1,0 +1,19 @@
+# system info ed_sim_reset_handler on 2025.06.02.16:07:27
+system_info:
+name,value
+DEVICE,A5ED065BB32AE6SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for ed_sim_reset_handler on 2025.06.02.16:07:27
+files:
+filepath,kind,attributes,module,is_top
+sim/ed_sim_reset_handler.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim_reset_handler,true
+mem_reset_handler_100/sim/ed_sim_reset_handler_mem_reset_handler_100_tz6himy.sv,SYSTEM_VERILOG,,ed_sim_reset_handler_mem_reset_handler_100_tz6himy,false
+mem_reset_handler_100/sim/mem_reset_handler.sv,SYSTEM_VERILOG,,ed_sim_reset_handler_mem_reset_handler_100_tz6himy,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ed_sim_reset_handler.mem_reset_handler_inst,ed_sim_reset_handler_mem_reset_handler_100_tz6himy

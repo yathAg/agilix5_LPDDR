@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="mem_reset_handler_100/sim/ed_sim_reset_handler_mem_reset_handler_100_tz6himy.sv"
+   type="SYSTEM_VERILOG"
+   library="mem_reset_handler_100" />
+ <file
+   path="mem_reset_handler_100/sim/mem_reset_handler.sv"
+   type="SYSTEM_VERILOG"
+   library="mem_reset_handler_100" />
+ <file
+   path="sim/ed_sim_reset_handler.v"
+   type="VERILOG"
+   library="ed_sim_reset_handler"
+   hasInlineConfiguration="true" />
+ <topLevel name="ed_sim_reset_handler.ed_sim_reset_handler" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE6SR0" />
+</simPackage>

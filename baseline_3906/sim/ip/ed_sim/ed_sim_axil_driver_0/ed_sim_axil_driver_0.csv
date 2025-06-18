@@ -1,0 +1,19 @@
+# system info ed_sim_axil_driver_0 on 2025.06.02.16:07:25
+system_info:
+name,value
+DEVICE,A5ED065BB32AE6SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for ed_sim_axil_driver_0 on 2025.06.02.16:07:25
+files:
+filepath,kind,attributes,module,is_top
+sim/ed_sim_axil_driver_0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim_axil_driver_0,true
+emif_ph2_axil_driver_100/sim/ed_sim_axil_driver_0_emif_ph2_axil_driver_100_qakapty.sv,SYSTEM_VERILOG,,ed_sim_axil_driver_0_emif_ph2_axil_driver_100_qakapty,false
+emif_ph2_axil_driver_100/sim/ed_sim_axil_driver_0_emif_ph2_axil_driver_100_qakapty_axil_driver_top.sv,SYSTEM_VERILOG,,ed_sim_axil_driver_0_emif_ph2_axil_driver_100_qakapty,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ed_sim_axil_driver_0.emif_ph2_axil_driver_inst,ed_sim_axil_driver_0_emif_ph2_axil_driver_100_qakapty

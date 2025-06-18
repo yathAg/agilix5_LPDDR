@@ -1,0 +1,19 @@
+# system info ed_sim_async_clk_source on 2025.06.02.16:07:24
+system_info:
+name,value
+DEVICE,A5ED065BB32AE6SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for ed_sim_async_clk_source on 2025.06.02.16:07:24
+files:
+filepath,kind,attributes,module,is_top
+sim/ed_sim_async_clk_source.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim_async_clk_source,true
+altera_avalon_clock_source_191/sim/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,altera_avalon_clock_source,false
+altera_avalon_clock_source_191/sim/altera_avalon_clock_source.sv,SYSTEM_VERILOG,,altera_avalon_clock_source,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ed_sim_async_clk_source.altera_avalon_clock_source_inst,altera_avalon_clock_source

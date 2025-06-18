@@ -1,0 +1,45 @@
+	ed_synth_traffic_generator u0 (
+		.remote_intf_clk              (_connected_to_remote_intf_clk_),              //   input,    width = 1,   remote_intf_clk.clk
+		.remote_intf_reset_n          (_connected_to_remote_intf_reset_n_),          //   input,    width = 1, remote_intf_reset.reset_n
+		.master_jtag_reset_jtag_reset (_connected_to_master_jtag_reset_jtag_reset_), //  output,    width = 1,        jtag_reset.reset
+		.driver0_axi4_awready         (_connected_to_driver0_axi4_awready_),         //   input,    width = 1,      driver0_axi4.awready
+		.driver0_axi4_awvalid         (_connected_to_driver0_axi4_awvalid_),         //  output,    width = 1,                  .awvalid
+		.driver0_axi4_awid            (_connected_to_driver0_axi4_awid_),            //  output,    width = 7,                  .awid
+		.driver0_axi4_awaddr          (_connected_to_driver0_axi4_awaddr_),          //  output,   width = 32,                  .awaddr
+		.driver0_axi4_awlen           (_connected_to_driver0_axi4_awlen_),           //  output,    width = 8,                  .awlen
+		.driver0_axi4_awsize          (_connected_to_driver0_axi4_awsize_),          //  output,    width = 3,                  .awsize
+		.driver0_axi4_awburst         (_connected_to_driver0_axi4_awburst_),         //  output,    width = 2,                  .awburst
+		.driver0_axi4_awlock          (_connected_to_driver0_axi4_awlock_),          //  output,    width = 1,                  .awlock
+		.driver0_axi4_awcache         (_connected_to_driver0_axi4_awcache_),         //  output,    width = 4,                  .awcache
+		.driver0_axi4_awprot          (_connected_to_driver0_axi4_awprot_),          //  output,    width = 3,                  .awprot
+		.driver0_axi4_awuser          (_connected_to_driver0_axi4_awuser_),          //  output,    width = 1,                  .awuser
+		.driver0_axi4_arready         (_connected_to_driver0_axi4_arready_),         //   input,    width = 1,                  .arready
+		.driver0_axi4_arvalid         (_connected_to_driver0_axi4_arvalid_),         //  output,    width = 1,                  .arvalid
+		.driver0_axi4_arid            (_connected_to_driver0_axi4_arid_),            //  output,    width = 7,                  .arid
+		.driver0_axi4_araddr          (_connected_to_driver0_axi4_araddr_),          //  output,   width = 32,                  .araddr
+		.driver0_axi4_arlen           (_connected_to_driver0_axi4_arlen_),           //  output,    width = 8,                  .arlen
+		.driver0_axi4_arsize          (_connected_to_driver0_axi4_arsize_),          //  output,    width = 3,                  .arsize
+		.driver0_axi4_arburst         (_connected_to_driver0_axi4_arburst_),         //  output,    width = 2,                  .arburst
+		.driver0_axi4_arlock          (_connected_to_driver0_axi4_arlock_),          //  output,    width = 1,                  .arlock
+		.driver0_axi4_arcache         (_connected_to_driver0_axi4_arcache_),         //  output,    width = 4,                  .arcache
+		.driver0_axi4_arprot          (_connected_to_driver0_axi4_arprot_),          //  output,    width = 3,                  .arprot
+		.driver0_axi4_aruser          (_connected_to_driver0_axi4_aruser_),          //  output,    width = 1,                  .aruser
+		.driver0_axi4_wready          (_connected_to_driver0_axi4_wready_),          //   input,    width = 1,                  .wready
+		.driver0_axi4_wvalid          (_connected_to_driver0_axi4_wvalid_),          //  output,    width = 1,                  .wvalid
+		.driver0_axi4_wdata           (_connected_to_driver0_axi4_wdata_),           //  output,  width = 256,                  .wdata
+		.driver0_axi4_wstrb           (_connected_to_driver0_axi4_wstrb_),           //  output,   width = 32,                  .wstrb
+		.driver0_axi4_wlast           (_connected_to_driver0_axi4_wlast_),           //  output,    width = 1,                  .wlast
+		.driver0_axi4_bready          (_connected_to_driver0_axi4_bready_),          //  output,    width = 1,                  .bready
+		.driver0_axi4_bvalid          (_connected_to_driver0_axi4_bvalid_),          //   input,    width = 1,                  .bvalid
+		.driver0_axi4_bid             (_connected_to_driver0_axi4_bid_),             //   input,    width = 7,                  .bid
+		.driver0_axi4_bresp           (_connected_to_driver0_axi4_bresp_),           //   input,    width = 2,                  .bresp
+		.driver0_axi4_rready          (_connected_to_driver0_axi4_rready_),          //  output,    width = 1,                  .rready
+		.driver0_axi4_rvalid          (_connected_to_driver0_axi4_rvalid_),          //   input,    width = 1,                  .rvalid
+		.driver0_axi4_rid             (_connected_to_driver0_axi4_rid_),             //   input,    width = 7,                  .rid
+		.driver0_axi4_rdata           (_connected_to_driver0_axi4_rdata_),           //   input,  width = 256,                  .rdata
+		.driver0_axi4_rresp           (_connected_to_driver0_axi4_rresp_),           //   input,    width = 2,                  .rresp
+		.driver0_axi4_rlast           (_connected_to_driver0_axi4_rlast_),           //   input,    width = 1,                  .rlast
+		.driver0_clk                  (_connected_to_driver0_clk_),                  //   input,    width = 1,       driver0_clk.clk
+		.driver0_reset_n              (_connected_to_driver0_reset_n_)               //   input,    width = 1,     driver0_reset.reset_n
+	);
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.06.02.16:06:52"
+ outputDirectory="C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/qii/ip/ed_synth/ed_synth_reset_handler/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="A5ED065BB32AE6SR0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="reset_n_0" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_n_0" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="conduit_0" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="conduit_0" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset_n_out" kind="reset" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="reset_n_0" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_out_n" direction="output" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ed_synth_reset_handler"
+   version="1.0"
+   name="ed_synth_reset_handler">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="A5ED065BB32AE6SR0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 5" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <generatedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\synth\ed_synth_reset_handler.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\synth\ed_synth_reset_handler.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/qii/ip/ed_synth/ed_synth_reset_handler.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/24.3.1/ip/altera/mem_ph2/ip_reset_handler/mem_reset_handler_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.components.tclelement.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopc.generator.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.ddmwriter.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcdocument.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.hdlwriter.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.common.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.intel.shared.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jacl1.3.2a.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/commons-text-1.10.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/commons-lang3-3.12.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/guava-32.0.1-jre.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jfreechart-1.5.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/miglayout-swing-5.2.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/docking-frames-common-1.1.2_20c.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/bare-bones-browser-launch-3.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-jxc.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-runtime.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-xjc.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/codemodel.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/dtd-parser.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/FastInfoset.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/istack-commons-runtime.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/istack-commons-tools.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/javax.activation-api.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/relaxng-datatype.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/rngom.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/stax-ex.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/txw2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/xsom.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/failureaccess-1.0.1.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jsr305-3.0.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/checker-qual-3.33.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/j2objc-annotations-2.8.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/miglayout-core-5.2.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/docking-frames-core-1.1.2_20c.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.privateinterfaces.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.ipxact.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/antlr4-runtime-4.7.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.ipxact.module.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.intel.quartus.dni.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcreport.build.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcreport.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.hypericonnect.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.cmsis.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.tcl.interpreter.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ed_synth_reset_handler">"Generating: ed_synth_reset_handler"</message>
+   <message level="Info" culprit="ed_synth_reset_handler">"Generating: ed_synth_reset_handler_mem_reset_handler_100_tz6himy"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="mem_reset_handler"
+   version="1.0.0"
+   name="ed_synth_reset_handler_mem_reset_handler_100_tz6himy">
+  <parameter name="CONDUIT_TYPE_8" value="" />
+  <parameter name="CONDUIT_TYPE_9" value="" />
+  <parameter name="CONDUIT_TYPE_6" value="" />
+  <parameter name="CONDUIT_TYPE_7" value="" />
+  <parameter name="CONDUIT_TYPE_4" value="" />
+  <parameter name="CONDUIT_TYPE_5" value="" />
+  <parameter name="CONDUIT_INVERT_4" value="false" />
+  <parameter name="CONDUIT_INVERT_5" value="false" />
+  <parameter name="CONDUIT_INVERT_6" value="false" />
+  <parameter name="CONDUIT_INVERT_7" value="false" />
+  <parameter name="CONDUIT_INVERT_0" value="false" />
+  <parameter name="CONDUIT_INVERT_1" value="false" />
+  <parameter name="CONDUIT_INVERT_2" value="false" />
+  <parameter name="CONDUIT_INVERT_3" value="false" />
+  <parameter name="CONDUIT_INVERT_8" value="false" />
+  <parameter name="CONDUIT_INVERT_9" value="false" />
+  <parameter name="CONDUIT_INVERT_10" value="false" />
+  <parameter name="CONDUIT_TYPE_2" value="" />
+  <parameter name="CONDUIT_INVERT_13" value="false" />
+  <parameter name="NUM_RESETS" value="1" />
+  <parameter name="CONDUIT_TYPE_3" value="" />
+  <parameter name="CONDUIT_INVERT_14" value="false" />
+  <parameter name="CONDUIT_TYPE_0" value="export" />
+  <parameter name="CONDUIT_INVERT_11" value="false" />
+  <parameter name="CONDUIT_TYPE_1" value="" />
+  <parameter name="CONDUIT_INVERT_12" value="false" />
+  <parameter name="CONDUIT_INVERT_15" value="false" />
+  <parameter name="SYNC_TO_CLK" value="true" />
+  <parameter name="USE_AND_GATE" value="true" />
+  <parameter name="NUM_CONDUITS" value="1" />
+  <parameter name="CONDUIT_TYPE_10" value="" />
+  <parameter name="CONDUIT_TYPE_12" value="" />
+  <parameter name="CONDUIT_TYPE_11" value="" />
+  <parameter name="CONDUIT_TYPE_14" value="" />
+  <parameter name="CONDUIT_TYPE_13" value="" />
+  <parameter name="CONDUIT_TYPE_15" value="" />
+  <generatedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\mem_reset_handler.sdc"
+       attributes="" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\ed_synth_reset_handler_mem_reset_handler_100_tz6himy.sv"
+       attributes="" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\mem_reset_handler.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\mem_reset_handler.sdc"
+       attributes="" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\ed_synth_reset_handler_mem_reset_handler_100_tz6himy.sv"
+       attributes="" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_reset_handler\mem_reset_handler_100\synth\mem_reset_handler.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_pro/24.3.1/ip/altera/mem_ph2/ip_reset_handler/mem_reset_handler_hw.tcl" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.components.tclelement.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopc.generator.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.ddmwriter.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcdocument.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.hdlwriter.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.common.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.intel.shared.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jacl1.3.2a.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/commons-text-1.10.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/commons-lang3-3.12.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/guava-32.0.1-jre.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jfreechart-1.5.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/miglayout-swing-5.2.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/docking-frames-common-1.1.2_20c.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/bare-bones-browser-launch-3.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-jxc.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-runtime.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jaxb-xjc.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/codemodel.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/dtd-parser.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/FastInfoset.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/istack-commons-runtime.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/istack-commons-tools.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/javax.activation-api.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/relaxng-datatype.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/rngom.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/stax-ex.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/txw2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/xsom.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/failureaccess-1.0.1.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/jsr305-3.0.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/checker-qual-3.33.0.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/j2objc-annotations-2.8.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/miglayout-core-5.2.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/docking-frames-core-1.1.2_20c.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.privateinterfaces.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.ipxact.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/antlr4-runtime-4.7.2.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.ipxact.module.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.intel.quartus.dni.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcreport.build.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcreport.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.hypericonnect.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.qsys.cmsis.jar" />
+   <file path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA_pro/24.3.1/qsys/lib/com.altera.tcl.interpreter.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ed_synth_reset_handler" as="mem_reset_handler_inst" />
+  <messages>
+   <message level="Info" culprit="ed_synth_reset_handler">"Generating: ed_synth_reset_handler_mem_reset_handler_100_tz6himy"</message>
+  </messages>
+ </entity>
+</deploy>

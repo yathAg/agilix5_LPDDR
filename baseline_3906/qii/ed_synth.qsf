@@ -1,0 +1,47 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the Intel FPGA Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+# Date created = 16:07:02  June 02, 2025
+#
+# -------------------------------------------------------------------------- #
+set_global_assignment -name FAMILY "Agilex 5"
+set_global_assignment -name TOP_LEVEL_ENTITY ed_synth
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
+set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
+set_global_assignment -name LAST_QUARTUS_VERSION "24.3.1 Pro Edition"
+set_global_assignment -name DEVICE A5ED065BB32AE6SR0
+set_global_assignment -name QSYS_FILE ed_synth.qsys
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_axil_driver_0.ip
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_emif_io96b_lpddr4_0.ip
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_reset_handler.ip
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_rrip.ip
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_traffic_generator.ip
+set_global_assignment -name IP_FILE ip/ed_synth/ed_synth_user_pll.ip
+set_global_assignment -name SDC_FILE jtag_example.sdc
+set_global_assignment -name DEVICE_INITIALIZATION_CLOCK OSC_CLK_1_100MHZ
+set_global_assignment -name EDA_EXDES_CUSTOM_SIM_SCRIPT_VCSMX ../sim/ed_sim/synopsys/vcsmx/vcsmx_setup.sh -section_id eda_simulation
+set_global_assignment -name EDA_EXDES_CUSTOM_SIM_SCRIPT_XCELIUM ../sim/ed_sim/xcelium/xcelium_setup.sh -section_id eda_simulation
+set_global_assignment -name EDA_EXDES_CUSTOM_SIM_SCRIPT_RIVIERAPRO ../sim/ed_sim/aldec/run_rivierapro_setup.tcl -section_id eda_simulation
+set_global_assignment -name EDA_EXDES_CUSTOM_SIM_SCRIPT_QUESTA ../sim/ed_sim/mentor/run_msim_setup.tcl -section_id eda_simulation
+set_location_assignment PIN_BW78 -to ref_clk_clk -comment IOBANK_2A_B
+set_location_assignment PIN_BH89 -to emif_io96b_lpddr4_0_oct_0_oct_rzqin -comment IOBANK_2A_B
+set_location_assignment PIN_D8 -to ref_clk_usr_pll_clk -comment IOBANK_6C
+set_global_assignment -name BOARD default

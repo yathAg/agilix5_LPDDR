@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.06.02.16:06:51"
+ outputDirectory="C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/qii/ip/ed_synth/ed_synth_rrip/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="A5ED065BB32AE6SR0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="ninit_done" kind="reset" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="ninit_done" direction="output" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="ed_synth_rrip" version="1.0" name="ed_synth_rrip">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="A5ED065BB32AE6SR0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 5" />
+  <parameter name="AUTO_BOARD" value="default" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <generatedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\synth\ed_synth_rrip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\synth\ed_synth_rrip.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/qii/ip/ed_synth/ed_synth_rrip.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/24.3.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ed_synth_rrip">"Generating: ed_synth_rrip"</message>
+   <message level="Info" culprit="ed_synth_rrip">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="altera_s10_user_rst_clkgate_inst">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_s10_user_rst_clkgate"
+   version="19.4.7"
+   name="altera_s10_user_rst_clkgate">
+  <parameter name="DEVICE_FAMILY" value="Agilex 5" />
+  <parameter name="outputType" value="Reset Interface" />
+  <generatedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\altera_s10_user_rst_clkgate_1947\synth\altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\altera_s10_user_rst_clkgate_1947\synth\altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\altera_s10_user_rst_clkgate_1947\synth\altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:\Users\agarw414\AppData\Local\Temp\alt0241_17663816786152718782.dir\0001_emif_io96b_lpddr4_0_gen\qii\ip\ed_synth\ed_synth_rrip\altera_s10_user_rst_clkgate_1947\synth\altera_s10_user_rst_clkgate_fm.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_pro/24.3.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ed_synth_rrip" as="altera_s10_user_rst_clkgate_inst" />
+  <messages>
+   <message level="Info" culprit="ed_synth_rrip">"Generating: altera_s10_user_rst_clkgate"</message>
+   <message level="Info" culprit="altera_s10_user_rst_clkgate_inst">generating top-level entity altera_s10_user_rst_clkgate</message>
+  </messages>
+ </entity>
+</deploy>

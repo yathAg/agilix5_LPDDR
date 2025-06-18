@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<internal_error>
+	<sub_system>ERR</sub_system>
+	<callstack>	0x7ffc9ba31940: dni_orch + 0x11940 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x3590)
+	0x7ffcd1053a92: ucrtbase + 0x53a92 (__sys_nerr + 0x2b2)
+	0x7ffcd102042d: ucrtbase + 0x2042d (_o_free + 0xdd)
+	0x7ffcd101dddc: ucrtbase + 0x1dddc (_execute_onexit_table + 0x3c)
+	0x7ffc9ba2f640: dni_orch + 0xf640 (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x1290)
+	0x7ffc9ba2e72d: dni_orch + 0xe72d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x37d)
+	0x7ffc9ba2ea0d: dni_orch + 0xea0d (?is_developer_debug@ORCH_UTIL@@YA_NXZ + 0x65d)
+	0x7ffcd3f38bae: ntdll + 0x28bae (RtlActivateActivationContextUnsafeFast + 0x12e)
+	0x7ffcd3f7bac5: ntdll + 0x6bac5 (LdrUnloadAlternateResourceModuleEx + 0x325)
+	0x7ffcd3f7b4fe: ntdll + 0x6b4fe (RtlInitAnsiStringEx + 0x7e)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f7b77b: ntdll + 0x6b77b (RtlInitAnsiStringEx + 0x2fb)
+	0x7ffcd3f3d49d: ntdll + 0x2d49d (LdrUnloadDll + 0x11d)
+	0x7ffcd3f3d414: ntdll + 0x2d414 (LdrUnloadDll + 0x94)
+	0x7ffcd172e40d: KERNELBASE + 0x3e40d (FreeLibrary + 0x1d)
+	0x7ffc9bd21fc8: mega_qsysipc_jni_stub + 0x1fc8 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x6c8)
+	0x7ffc9bd21908: mega_qsysipc_jni_stub + 0x1908 (Java_com_altera_qsys_ipc_QsysIPCNativeInterface_nativeShutDownJNIModule + 0x8)
+	0x1f6f7a9d620:
+	0x1f6da70720f:
+	       0x73:
+	0x1f5ffffffff:
+	0x1f6f7a994fd:
+	0x61d394abf:
+	0x1f6f7a9d2f5:
+	0x5bc0bff26f:
+	0x1f6da70720f:
+	0x5bc0bff2d7:
+	0x1f6da70a1b7:
+</callstack>
+	<error>*** Fatal Error: Access Violation at 00007FFC9BA31941</error>
+	<date>Wed Jun 18 13:21:45 2025
+</date>
+	<version>Version 24.3.1 Build 102 01/14/2025 SC Pro Edition</version>
+</internal_error>

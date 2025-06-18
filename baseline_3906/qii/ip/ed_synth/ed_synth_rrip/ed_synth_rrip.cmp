@@ -1,0 +1,6 @@
+	component ed_synth_rrip is
+		port (
+			ninit_done : out std_logic   -- reset
+		);
+	end component ed_synth_rrip;
+

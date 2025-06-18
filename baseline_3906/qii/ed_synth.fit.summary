@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Jun  2 16:21:43 2025
+Quartus Prime Version : 24.3.1 Build 102 01/14/2025 SC Pro Edition
+Revision Name : ed_synth
+Top-level Entity Name : ed_synth
+Family : Agilex 5
+Device : A5ED065BB32AE6SR0
+Timing Models : Preliminary
+Power Models : Preliminary
+Device Status : Preliminary
+Logic utilization (in ALMs) : 19,655 / 222,400 ( 9 % )
+Total dedicated logic registers : 49682
+Total pins : 59 / 624 ( 9 % )
+Total block memory bits : 1,555,648 / 32,993,280 ( 5 % )
+Total RAM Blocks : 172 / 1,611 ( 11 % )
+Total DSP Blocks : 0 / 846 ( 0 % )
+Total GTS Transceiver Channels : 0 / 24 ( 0 % )
+Total HSSI Ethernet Channels : 0 / 6 ( 0 % )
+Total HSSI PCIEs : 0 / 6 ( 0 % )
+Total HSSI HPS : 0 / 1 ( 0 % )
+Total PLLs : 2 / 15 ( 13 % )

@@ -1,0 +1,149 @@
+Flow report for ed_synth
+Mon Jun  2 16:22:24 2025
+Quartus Prime Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Flow Summary
+  2. Flow Settings
+  3. Flow Non-Default Global Settings
+  4. Flow Elapsed Time
+  5. Flow OS Summary
+  6. Flow Log
+  7. Legal Notice
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Mon Jun  2 16:22:24 2025      ;
+; Quartus Prime Version           ; 24.3.1 Build 102 01/14/2025 SC Pro Edition ;
+; Revision Name                   ; ed_synth                                   ;
+; Top-level Entity Name           ; ed_synth                                   ;
+; Family                          ; Agilex 5                                   ;
+; Device                          ; A5ED065BB32AE6SR0                          ;
+; Timing Models                   ; Preliminary                                ;
+; Power Models                    ; Preliminary                                ;
+; Device Status                   ; Preliminary                                ;
+; Logic utilization (in ALMs)     ; 19,655 / 222,400 ( 9 % )                   ;
+; Total dedicated logic registers ; 49682                                      ;
+; Total pins                      ; 59 / 624 ( 9 % )                           ;
+; Total block memory bits         ; 1,555,648 / 32,993,280 ( 5 % )             ;
+; Total RAM Blocks                ; 172 / 1,611 ( 11 % )                       ;
+; Total DSP Blocks                ; 0 / 846 ( 0 % )                            ;
+; Total GTS Transceiver Channels  ; 0 / 24 ( 0 % )                             ;
+; Total HSSI Ethernet Channels    ; 0 / 6 ( 0 % )                              ;
+; Total HSSI PCIEs                ; 0 / 6 ( 0 % )                              ;
+; Total HSSI HPS                  ; 0 / 1 ( 0 % )                              ;
+; Total PLLs                      ; 2 / 15 ( 13 % )                            ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/02/2025 16:12:05 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; ed_synth            ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                      ;
++----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                        ; Value                                                                                                                         ; Default Value ; Entity Name ; Section Id     ;
++----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                  ; 279929330745683.174889512521088                                                                                               ; --            ; --          ; --             ;
+; EDA_EXDES_CUSTOM_SIM_SCRIPT_QUESTA     ; C:/LPDDR_test/baseline_3906/sim/ed_sim/mentor/run_msim_setup.tcl                                                              ; --            ; --          ; eda_simulation ;
+; EDA_EXDES_CUSTOM_SIM_SCRIPT_RIVIERAPRO ; C:/LPDDR_test/baseline_3906/sim/ed_sim/aldec/run_rivierapro_setup.tcl                                                         ; --            ; --          ; eda_simulation ;
+; EDA_EXDES_CUSTOM_SIM_SCRIPT_VCSMX      ; ../sim/ed_sim/synopsys/vcsmx/vcsmx_setup.sh                                                                                   ; --            ; --          ; eda_simulation ;
+; EDA_EXDES_CUSTOM_SIM_SCRIPT_XCELIUM    ; ../sim/ed_sim/xcelium/xcelium_setup.sh                                                                                        ; --            ; --          ; eda_simulation ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/dni/sandboxes/X-EE216PC01_21088_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/dni/sandboxes/X-EE216PC01_21088_0/sld/ipgen/alt_sld_fab_0.ip                                  ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ed_synth/ed_synth.cmp                                                                         ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ed_synth.qsys                                                                                 ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_axil_driver_0/ed_synth_axil_driver_0.cmp                                 ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_axil_driver_0.ip                                                         ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_emif_io96b_lpddr4_0/ed_synth_emif_io96b_lpddr4_0.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_emif_io96b_lpddr4_0.ip                                                   ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_emif_io96b_lpddr4_0/emif_io96b_cal_200/synth/cal_io96b_interface.svh     ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_emif_io96b_lpddr4_0/emif_io96b_lpddr4_200/synth/emif_io96b_interface.svh ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_reset_handler/ed_synth_reset_handler.cmp                                 ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_reset_handler.ip                                                         ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_rrip/ed_synth_rrip.cmp                                                   ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_rrip.ip                                                                  ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_traffic_generator/ed_synth_traffic_generator.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_traffic_generator.ip                                                     ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_user_pll/ed_synth_user_pll.cmp                                           ; --            ; --          ; --             ;
+; MISC_FILE                              ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_user_pll.ip                                                              ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/dni/sandboxes/X-EE216PC01_21088_0/sld/ipgen/alt_sld_fab_0/alt_sld_fab_0.sopcinfo              ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ed_synth/ed_synth.sopcinfo                                                                    ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_axil_driver_0/ed_synth_axil_driver_0.sopcinfo                            ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_emif_io96b_lpddr4_0/ed_synth_emif_io96b_lpddr4_0.sopcinfo                ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_reset_handler/ed_synth_reset_handler.sopcinfo                            ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_rrip/ed_synth_rrip.sopcinfo                                              ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_traffic_generator/ed_synth_traffic_generator.sopcinfo                    ; --            ; --          ; --             ;
+; SOPCINFO_FILE                          ; C:/LPDDR_test/baseline_3906/qii/ip/ed_synth/ed_synth_user_pll/ed_synth_user_pll.sopcinfo                                      ; --            ; --          ; --             ;
++----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++------------------------------------------------------+
+; Flow Elapsed Time                                    ;
++-----------------+--------------+---------------------+
+; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
++-----------------+--------------+---------------------+
+; Synthesis       ; 00:01:55     ; 2165 MB             ;
+; Fitter          ; 00:07:41     ; 9429 MB             ;
+; Timing Analyzer ; 00:00:14     ; 2328 MB             ;
+; Assembler       ; 00:00:22     ; 3247 MB             ;
+; Total           ; 00:10:12     ; --                  ;
++-----------------+--------------+---------------------+
+
+
++-------------------------------------------------------------------------------+
+; Flow OS Summary                                                               ;
++-----------------+------------------+------------+------------+----------------+
+; Module Name     ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-----------------+------------------+------------+------------+----------------+
+; Synthesis       ; X-EE216PC01      ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Fitter          ; X-EE216PC01      ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Timing Analyzer ; X-EE216PC01      ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Assembler       ; X-EE216PC01      ; Windows 11 ; 10.0.22631 ; x86_64         ;
++-----------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off ed_synth -c ed_synth
+quartus_fit --read_settings_files=on --write_settings_files=off ed_synth -c ed_synth
+quartus_sta ed_synth -c ed_synth --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off ed_synth -c ed_synth
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+

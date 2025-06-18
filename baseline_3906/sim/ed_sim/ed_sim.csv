@@ -1,0 +1,36 @@
+# system info ed_sim on 2025.06.02.16:07:27
+system_info:
+name,value
+DEVICE,A5ED065BB32AE6SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for ed_sim on 2025.06.02.16:07:27
+files:
+filepath,kind,attributes,module,is_top
+sim/ed_sim.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim,true
+altera_mm_interconnect_1920/sim/ed_sim_altera_mm_interconnect_1920_h43vqey.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,ed_sim_altera_mm_interconnect_1920_h43vqey,false
+altera_reset_controller_1924/sim/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
+altera_reset_controller_1924/sim/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
+altera_reset_controller_1924/sim/altera_reset_controller.sdc,SDC_ENTITY,NO_SDC_PROMOTION,altera_reset_controller,false
+altera_merlin_axi_translator_1972/sim/ed_sim_altera_merlin_axi_translator_1972_npbsrda.sv,SYSTEM_VERILOG,,ed_sim_altera_merlin_axi_translator_1972_npbsrda,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ed_sim.async_clk_source,ed_sim_async_clk_source
+ed_sim.axil_driver_0,ed_sim_axil_driver_0
+ed_sim.emif_io96b_lpddr4_0,ed_sim_emif_io96b_lpddr4_0
+ed_sim.mem,ed_sim_mem
+ed_sim.ref_clk_source_0,ed_sim_ref_clk_source_0
+ed_sim.reset_handler,ed_sim_reset_handler
+ed_sim.rrip,ed_sim_rrip
+ed_sim.traffic_generator,ed_sim_traffic_generator
+ed_sim.user_pll,ed_sim_user_pll
+ed_sim.mm_interconnect_1,ed_sim_altera_mm_interconnect_1920_h43vqey
+ed_sim.mm_interconnect_1.traffic_generator_driver0_axi4_translator,ed_sim_altera_merlin_axi_translator_1972_npbsrda
+ed_sim.mm_interconnect_1.emif_io96b_lpddr4_0_s0_axi4_translator,ed_sim_altera_merlin_axi_translator_1972_npbsrda
+ed_sim.rst_controller,altera_reset_controller
+ed_sim.rst_controller_001,altera_reset_controller
+ed_sim.rst_controller_002,altera_reset_controller

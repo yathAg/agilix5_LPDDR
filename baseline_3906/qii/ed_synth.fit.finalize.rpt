@@ -1,0 +1,99 @@
+Fitter Finalize Stage Report for ed_synth
+Mon Jun  2 16:21:35 2025
+Quartus Prime Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Routing Usage Summary
+  3. Finalize Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------+
+; Routing Usage Summary                                               ;
++--------------------------------------+------------------------------+
+; Routing Resource Type                ; Usage                        ;
++--------------------------------------+------------------------------+
+; Block Input Mux Wrapbacks            ; 2,353 / 197,400 ( 1 % )      ;
+; Block Input Muxes                    ; 130,950 / 2,278,560 ( 6 % )  ;
+; Block interconnects                  ; 107,335 / 2,391,360 ( 4 % )  ;
+; C1 interconnects                     ; 52,481 / 1,071,360 ( 5 % )   ;
+; C4 interconnects                     ; 10,016 / 1,049,040 ( < 1 % ) ;
+; C8 interconnects                     ; 157 / 104,904 ( < 1 % )      ;
+; DCM_muxes                            ; 2 / 456 ( < 1 % )            ;
+; DELAY_CHAINs                         ; 14 / 4,306 ( < 1 % )         ;
+; Direct links                         ; 12,906 / 2,391,360 ( < 1 % ) ;
+; HIO Buffers                          ; 1 / 31,584 ( < 1 % )         ;
+; IO12PHYTOP_LOGIC_INPUTs              ; 1 / 416 ( < 1 % )            ;
+; IO12PHYTOP_LOGIC_OUTPUTs             ; 1 / 960 ( < 1 % )            ;
+; IO75XDDRFMXCKTREE_CLKDRV_BIG_VCO_REs ; 2 / 16 ( 13 % )              ;
+; IO75XDDRFMXCKTREE_CLKDRV_GM0_REs     ; 2 / 16 ( 13 % )              ;
+; IO75XDDRFMXCKTREE_CLKDRV_VCO_INPUTs  ; 1 / 8 ( 13 % )               ;
+; IO75XDDRFMXCKTREE_CLKDRV_VCO_OUTPUTs ; 1 / 8 ( 13 % )               ;
+; IO75XDDRFMXCKTREE_FB_MUX31_REs       ; 0 / 48 ( 0 % )               ;
+; IOFBRADAPT_C2P_BUF_INPUTs            ; 0 / 132 ( 0 % )              ;
+; IOFBRADAPT_C2P_BUF_OUTPUTs           ; 0 / 132 ( 0 % )              ;
+; IOFBRADAPT_FRZ_BUFS_REs              ; 0 / 616 ( 0 % )              ;
+; IOFBRADAPT_P2C_BUF_INPUTs            ; 0 / 284 ( 0 % )              ;
+; IOFBRADAPT_P2C_BUF_OUTPUTs           ; 0 / 284 ( 0 % )              ;
+; Programmable Invert Buffers          ; 14 / 320 ( 4 % )             ;
+; Programmable Invert Inputs           ; 4,981 / 214,170 ( 2 % )      ;
+; Programmable Inverts                 ; 4,981 / 214,170 ( 2 % )      ;
+; R0 interconnects                     ; 69,842 / 1,835,820 ( 4 % )   ;
+; R1 interconnects                     ; 43,875 / 1,049,040 ( 4 % )   ;
+; R12 interconnects                    ; 249 / 157,356 ( < 1 % )      ;
+; R2 interconnects                     ; 15,601 / 527,340 ( 3 % )     ;
+; R4 interconnects                     ; 7,747 / 532,980 ( 1 % )      ;
+; R6 interconnects                     ; 5,621 / 535,800 ( 1 % )      ;
+; Redundancy Muxes                     ; 2 / 62,248 ( < 1 % )         ;
+; Row Clock Tap-Offs                   ; 3,488 / 157,356 ( 2 % )      ;
+; Switchbox_clock_muxes                ; 30 / 5,120 ( < 1 % )         ;
+; VIO Buffers                          ; 298 / 12,800 ( 2 % )         ;
+; Vertical_seam_tap_muxes              ; 27 / 2,304 ( 1 % )           ;
++--------------------------------------+------------------------------+
+
+
++-------------------+
+; Finalize Messages ;
++-------------------+
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+    Info: Processing started: Mon Jun  2 16:14:01 2025
+    Info: System process ID: 16192
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off ed_synth -c ed_synth
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = ed_synth
+Info: Revision = ed_synth
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (18258): Fitter Physical Synthesis operations beginning
+Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:01
+Info (24604): Global preservation of unused transceiver channels is enabled. All unused transceiver channels will be preserved.
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:00:52
+
+

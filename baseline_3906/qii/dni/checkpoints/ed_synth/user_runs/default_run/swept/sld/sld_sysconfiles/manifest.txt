@@ -1,0 +1,8 @@
+22 serialization::archive 19 0 1 0 0 8 0 0 0 22 alt_sld_fab_0.sopcinfo 0 0 10 text_model 0 0 0 1 1 
+ 17 ed_synth.sopcinfo 10 text_model 0 1 1 
+ 31 ed_synth_axil_driver_0.sopcinfo 10 text_model 0 1 1 
+ 37 ed_synth_emif_io96b_lpddr4_0.sopcinfo 10 text_model 0 1 1 
+ 31 ed_synth_reset_handler.sopcinfo 10 text_model 0 1 1 
+ 22 ed_synth_rrip.sopcinfo 10 text_model 0 1 1 
+ 35 ed_synth_traffic_generator.sopcinfo 10 text_model 0 1 1 
+ 26 ed_synth_user_pll.sopcinfo 10 text_model 0 1 1 

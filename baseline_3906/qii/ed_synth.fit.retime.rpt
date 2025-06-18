@@ -1,0 +1,285 @@
+Fitter Retime Stage Report for ed_synth
+Mon Jun  2 16:20:42 2025
+Quartus Prime Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Hyper-Retimer Settings
+  3. Reset Sequence Requirement
+  4. Retiming Limit Summary
+  5. Critical Chain Summary for Transfer from altera_reserved_tck to Top-level Output ports
+  6. Critical Chain Summary for Clock Domain Top-level Input ports
+  7. Clock Domain user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+  8. Clock Domain user_pll|altera_iopll_inst_outclk1 (Meets timing requirements: No further analysis performed.)
+  9. Clock Domain altera_reserved_tck (Meets timing requirements: No further analysis performed.)
+ 10. Transfer from user_pll|altera_iopll_inst_outclk1 to user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+ 11. Transfer from user_pll|altera_iopll_inst_outclk0 to user_pll|altera_iopll_inst_outclk1 (Meets timing requirements: No further analysis performed.)
+ 12. Transfer from user_pll|altera_iopll_inst|tennm_ph2_iopll|ref_clk0 to user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+ 13. Clock Domain emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_phy_clk_0 (Meets timing requirements: No further analysis performed.)
+ 14. Retime Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------+
+; Hyper-Retimer Settings                           ;
++------------------------+---------+---------------+
+; Option                 ; Setting ; Default Value ;
++------------------------+---------+---------------+
+; Enable Auto-Pipelining ; On      ; On            ;
++------------------------+---------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Reset Sequence Requirement                                                                                            ;
++-----------------------------------------------------------------------------------------+-----------------------------+
+; Clock Name                                                                              ; Number of additional cycles ;
++-----------------------------------------------------------------------------------------+-----------------------------+
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_ref_clock                                  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_pll_ncntr                                  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_vco_base_0                                 ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_vco_clk_periph_0                           ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_c0_cntr_0                                  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_phy_clk_0                                  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_c1_cntr_0                                  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_phy_clk_sync_0                             ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[0]_in  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[1]_in  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[2]_in  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[3]_in  ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_hmc_wide_p2c                            ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_hmc_wide_c2p                            ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_3_c2p                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_2_c2p                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_1_c2p                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_1_p2c                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_2_p2c                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_fa_lane_3_p2c                              ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_0_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_0_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_1_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_1_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_2_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_2_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_3_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_3_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_4_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_4_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_5_rxclk_gated                         ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_lane_5_byte_rx_gated                       ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[0]_nff ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[1]_nff ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[2]_nff ; 0                           ;
+; emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_emif_io96b_lpddr4_0_mem_0_mem_dqs_t[3]_nff ; 0                           ;
+; internal_clk                                                                            ; 0                           ;
+; user_pll|altera_iopll_inst_refclk                                                       ; 0                           ;
+; user_pll|altera_iopll_inst|tennm_ph2_iopll|ref_clk0                                     ; 0                           ;
+; user_pll|altera_iopll_inst_n_cnt_clk                                                    ; 0                           ;
+; user_pll|altera_iopll_inst_m_cnt_clk                                                    ; 0                           ;
+; user_pll|altera_iopll_inst_outclk0                                                      ; 3                           ;
+; user_pll|altera_iopll_inst_outclk1                                                      ; 0                           ;
+; altera_reserved_tck                                                                     ; 0                           ;
++-----------------------------------------------------------------------------------------+-----------------------------+
+Note: Due to retiming optimizations, a clock domain may require a longer reset sequence to ensure correct functionality.  The table above indicates the minimum number of additional reset sequence cycles needed for each clock domain.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Retiming Limit Summary                                                                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------+
+; Clock Transfer                                                                                          ; Limiting Reason                                           ; Recommendation                                                                       ;
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------+
+; Transfer from altera_reserved_tck to Top-level Output ports                                             ; Path Limit                                                ; None. Retiming has used all available register locations in the critical chain path. ;
+;                                                                                                         ;                                                           ;    Performance cannot be increased through retiming/Fast Forward analysis alone.     ;
+;                                                                                                         ;                                                           ;    Increased clock speed may be possible through other optimization techniques.      ;
+; Clock Domain Top-level Input ports                                                                      ; Path Limit                                                ; None. Retiming has used all available register locations in the critical chain path. ;
+;                                                                                                         ;                                                           ;    Performance cannot be increased through retiming/Fast Forward analysis alone.     ;
+;                                                                                                         ;                                                           ;    Increased clock speed may be possible through other optimization techniques.      ;
+; Clock Domain user_pll|altera_iopll_inst_outclk0                                                         ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Clock Domain user_pll|altera_iopll_inst_outclk1                                                         ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Clock Domain altera_reserved_tck                                                                        ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Transfer from user_pll|altera_iopll_inst_outclk1 to user_pll|altera_iopll_inst_outclk0                  ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Transfer from user_pll|altera_iopll_inst_outclk0 to user_pll|altera_iopll_inst_outclk1                  ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Transfer from user_pll|altera_iopll_inst|tennm_ph2_iopll|ref_clk0 to user_pll|altera_iopll_inst_outclk0 ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
+; Clock Domain emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_phy_clk_0                                     ; Meets timing requirements: No further analysis performed. ; None                                                                                 ;
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------+
+
+
+Critical Chain Summary for Transfer from altera_reserved_tck to Top-level Output ports
+===============================================================================
++-------------------------------------------------------------------------------------+
+; Recommendations for Critical Chain                                                  ;
++-------------------------------------------------------------------------------------+
+; Recommendation                                                                      ;
++-------------------------------------------------------------------------------------+
+; The critical chain is limited by: Path Limit                                        ;
+;                                                                                     ;
+; The source or destination register is involved in a cross-partition transfer        ;
+;    and so Hyper-Registers on the routing path cannot be used and are not displayed  ;
+;    on the critical chain. Consider duplicating the register to isolate the critical ;
+;    path from the cross-partition transfer.                                          ;
+;                                                                                     ;
+; Retiming Restriction: Boundary Port Restriction                                     ;
+;  Unable to retime across boundary ports:                                            ;
+;    auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo              ;
+;                                                                                     ;
+; Retiming Restriction: Cross Partition Transfer Restriction                          ;
+;  Unable to retime across nodes involved in cross-partition transfers:               ;
+;    auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom                   ;
+;    altera_reserved_tdo~output                                                       ;
++-------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Critical Chain Details                                                                                                                      ;
++----------------------+-----------+-------------+--------------------------------------------------------------------------------------------+
+; Path Info            ; Register  ; Register ID ; Element                                                                                    ;
++----------------------+-----------+-------------+--------------------------------------------------------------------------------------------+
+; Long Path (Critical) ; REG (SDM) ; #1          ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom~soc_sdm/padsig_io1.reg__nff ;
+; Long Path (Critical) ;           ;             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom|tdo                         ;
+; Long Path (Critical) ;           ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo|input                  ;
+; Long Path (Critical) ;           ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo                        ;
+; Long Path (Critical) ;           ;             ; altera_reserved_tdo~output|i                                                               ;
+; Long Path (Critical) ;           ;             ; altera_reserved_tdo~output|o                                                               ;
+; Long Path (Critical) ; PIN       ;             ; altera_reserved_tdo                                                                        ;
++----------------------+-----------+-------------+--------------------------------------------------------------------------------------------+
+
+
+
+Critical Chain Summary for Clock Domain Top-level Input ports
+===============================================================================
++-------------------------------------------------------------------------------------+
+; Recommendations for Critical Chain                                                  ;
++-------------------------------------------------------------------------------------+
+; Recommendation                                                                      ;
++-------------------------------------------------------------------------------------+
+; The critical chain is limited by: Path Limit                                        ;
+;                                                                                     ;
+; The source or destination register is involved in a cross-partition transfer        ;
+;    and so Hyper-Registers on the routing path cannot be used and are not displayed  ;
+;    on the critical chain. Consider duplicating the register to isolate the critical ;
+;    path from the cross-partition transfer.                                          ;
+;                                                                                     ;
+; Retiming Restriction: Boundary Port Restriction                                     ;
+;  Unable to retime across boundary ports:                                            ;
+;    auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdi              ;
+;    auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo              ;
+;                                                                                     ;
+; Retiming Restriction: Cross Partition Transfer Restriction                          ;
+;  Unable to retime across nodes involved in cross-partition transfers:               ;
+;    altera_reserved_tdi~input                                                        ;
+;    auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom                   ;
+;    altera_reserved_tdo~output                                                       ;
++-------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Critical Chain Details                                                                                                    ;
++----------------------+----------+-------------+---------------------------------------------------------------------------+
+; Path Info            ; Register ; Register ID ; Element                                                                   ;
++----------------------+----------+-------------+---------------------------------------------------------------------------+
+; Long Path (Critical) ; PIN      ;             ; altera_reserved_tdi                                                       ;
+; Long Path (Critical) ;          ;             ; altera_reserved_tdi~input|i                                               ;
+; Long Path (Critical) ;          ;             ; altera_reserved_tdi~input|o                                               ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdi|input ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdi       ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom|tdi        ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|jtagpins|atom_inst|atom|tdo        ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo|input ;
+; Long Path (Critical) ;          ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_jtagpins_ext_tdo       ;
+; Long Path (Critical) ;          ;             ; altera_reserved_tdo~output|i                                              ;
+; Long Path (Critical) ;          ;             ; altera_reserved_tdo~output|o                                              ;
+; Long Path (Critical) ; PIN      ;             ; altera_reserved_tdo                                                       ;
++----------------------+----------+-------------+---------------------------------------------------------------------------+
+
+
+
+Clock Domain user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain user_pll|altera_iopll_inst_outclk1 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain altera_reserved_tck (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from user_pll|altera_iopll_inst_outclk1 to user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from user_pll|altera_iopll_inst_outclk0 to user_pll|altera_iopll_inst_outclk1 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from user_pll|altera_iopll_inst|tennm_ph2_iopll|ref_clk0 to user_pll|altera_iopll_inst_outclk0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst_0_phy_clk_0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
++-----------------+
+; Retime Messages ;
++-----------------+
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 24.3.1 Build 102 01/14/2025 SC Pro Edition
+    Info: Processing started: Mon Jun  2 16:14:01 2025
+    Info: System process ID: 16192
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off ed_synth -c ed_synth
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = ed_synth
+Info: Revision = ed_synth
+Info (17966): Starting Hyper-Retimer operations.
+Info (18914): The Hyper-Retimer was unable to optimize the design due to retiming restrictions. Run Fast Forward Timing Closure Recommendations to see step-by-step suggestions for design changes and show the estimated performance improvement from making these changes.
+Info (17968): Completed Hyper-Retimer operations.
+Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:07
+Info: Following instance found in the design -  emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|remote_access_jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller_001|*
+Info: Following instance found in the design -  rst_controller|*
+Info: Following instance found in the design -  rst_controller_001|*
+Info: Following instance found in the design -  rst_controller_002|*
+Info: Following instance found in the design -  emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|remote_access_jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller_001|*
+Info: Following instance found in the design -  rst_controller|*
+Info: Following instance found in the design -  rst_controller_001|*
+Info: Following instance found in the design -  rst_controller_002|*
+Info: clock = _col415
+Info: number of internal_clk created = 1
+Info: Following instance found in the design -  emif_io96b_lpddr4_0|emif_io96b_lpddr4_inst|io0.calip_0|cal_0|g_jamb_arbit.ed_synth_emif_io96b_lpddr4_0_emif_io96b_cal_alt_mem_if_jtag_master_200_6eqlegy|jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|remote_access_jamb|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller|*
+Info: Following instance found in the design -  traffic_generator|hydra_inst|rst_controller_001|*
+Info: Following instance found in the design -  rst_controller|*
+Info: Following instance found in the design -  rst_controller_001|*
+Info: Following instance found in the design -  rst_controller_002|*
+
+

@@ -1,0 +1,9 @@
+	component ed_synth_reset_handler is
+		port (
+			reset_n_0   : in  std_logic := 'X'; -- reset_n
+			conduit_0   : in  std_logic := 'X'; -- export
+			clk         : in  std_logic := 'X'; -- clk
+			reset_out_n : out std_logic         -- reset_n
+		);
+	end component ed_synth_reset_handler;
+

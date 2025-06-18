@@ -1,0 +1,7 @@
+{
+	"type" : "generic_rtm",
+	"trait" : "cache",
+	"temp_payload_path" : "",
+	"signature" : "6256c2f5b1fdeeccf260b91e8c569325",
+	"bak" : false
+}

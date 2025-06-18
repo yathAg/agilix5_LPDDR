@@ -1,0 +1,100 @@
+--altera_syncram_nd_impl ACF_BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES="CARE" ACF_BLOCK_RAM_AND_MLAB_EQUIVALENT_POWER_UP_CONDITIONS="AUTO" ACF_DISABLE_MLAB_RAM_USE="FALSE" ACF_IMPLEMENT_MLAB_IN_16_BIT_DEEP_MODE="FALSE" ADDRESS_ACLR_A="NONE" ADDRESS_ACLR_B="NONE" ADDRESS_REG_B="CLOCK0" BYTE_SIZE=8 CLKEN_POWER_OPTIMIZATION="OFF" CLOCK_ENABLE_CORE_A="USE_INPUT_CLKEN" CLOCK_ENABLE_CORE_B="USE_INPUT_CLKEN" CLOCK_ENABLE_INPUT_A="NORMAL" CLOCK_ENABLE_INPUT_B="NORMAL" CLOCK_ENABLE_OUTPUT_A="NORMAL" CLOCK_ENABLE_OUTPUT_B="NORMAL" DEVICE_FAMILY="Agilex 5" ECC_PIPELINE_STAGE_ENABLED="FALSE" ENABLE_COHERENT_READ="FALSE" ENABLE_ECC="FALSE" ENABLE_ECC_ENCODER_BYPASS="FALSE" ENABLE_FORCE_TO_ZERO="FALSE" IMPLEMENT_IN_LES="OFF" INIT_FILE_LAYOUT="PORT_A" LOW_POWER_MODE="AUTO" MAXIMUM_DEPTH=0 NUMWORDS_A=32 NUMWORDS_B=32 OPERATION_MODE="DUAL_PORT" OPTIMIZATION_OPTION="AUTO" OUTDATA_ACLR_A="NONE" OUTDATA_ACLR_B="NONE" OUTDATA_REG_A="UNREGISTERED" OUTDATA_REG_B="UNREGISTERED" OUTDATA_SCLR_A="NONE" OUTDATA_SCLR_B="NONE" POWER_UP_UNINITIALIZED="FALSE" RAM_BLOCK_TYPE="MLAB" RDEN_POWER_OPTIMIZATION="OFF" READ_DURING_WRITE_MODE_MIXED_PORTS="DONT_CARE" READ_DURING_WRITE_MODE_PORT_A="NEW_DATA_NO_NBE_READ" READ_DURING_WRITE_MODE_PORT_B="NEW_DATA_NO_NBE_READ" WIDTH_A=3 WIDTH_B=3 WIDTH_BYTEENA_A=1 WIDTH_BYTEENA_B=1 WIDTH_ECCENCPARITY=8 WIDTH_ECCSTATUS=2 WIDTHAD2_A=1 WIDTHAD2_B=1 WIDTHAD_A=5 WIDTHAD_B=5 WREN_POWER_OPTIMIZATION="OFF" address_a address_b clock0 data_a q_b wren_a CARRY_CHAIN="MANUAL"
+--VERSION_BEGIN 24.3 cbx_altera_syncram_nd_impl 2024:12:20:22:35:26:SC cbx_lpm_add_sub 2024:12:20:22:35:26:SC cbx_lpm_compare 2024:12:20:22:35:26:SC cbx_lpm_decode 2024:12:20:22:35:27:SC cbx_lpm_mux 2024:12:20:22:35:27:SC cbx_mgl 2024:12:20:22:35:35:SC cbx_nadder 2024:12:20:22:35:27:SC cbx_stratix 2024:12:20:22:35:27:SC cbx_stratixii 2024:12:20:22:35:27:SC cbx_stratixv 2024:12:20:22:35:27:SC cbx_util_mgl 2024:12:20:22:35:27:SC  VERSION_END
+
+
+-- Copyright (C) 2025  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and any partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the Intel FPGA Software License Subscription Agreements 
+--  on the Quartus Prime software download page.
+
+
+FUNCTION tennm_mlab_cell (clk0, clk1, clr, ena0, ena1, ena2, portaaddr[address_width-1..0], portabyteenamasks[byte_enable_mask_width-1..0], portadatain[data_width-1..0], portbaddr[address_width-1..0])
+WITH ( address_width = 1, byte_enable_mask_width = 2, data_width = 1, first_address, first_bit_number, init_file, last_address, logical_ram_depth, logical_ram_name, logical_ram_width, mem_init0, mixed_port_feed_through_mode, port_b_data_out_clear, port_b_data_out_clock)
+RETURNS ( portbdataout[data_width-1..0]);
+
+--synthesis_resources = MLAB 1 reg 5 
+OPTIONS ALTERA_INTERNAL_OPTION = "OPTIMIZE_POWER_DURING_SYNTHESIS=NORMAL_COMPILATION;{-to rdaddr_reg} PRESERVE_REGISTER_SYN_ONLY=ON";
+
+SUBDESIGN altera_syncram_impl_c3bd1
+( 
+	address_a[4..0]	:	input;
+	address_b[4..0]	:	input;
+	clock0	:	input;
+	data_a[2..0]	:	input;
+	q_b[2..0]	:	output;
+	wren_a	:	input;
+) 
+VARIABLE 
+	lutrama0 : tennm_mlab_cell
+		WITH (
+			address_width = 5,
+			data_width = 1,
+			first_address = 0,
+			first_bit_number = 0,
+			last_address = 31,
+			logical_ram_depth = 32,
+			logical_ram_name = "ALTDPRAM_INSTANCE",
+			logical_ram_width = 3,
+			mixed_port_feed_through_mode = "dont care"
+		);
+	lutrama1 : tennm_mlab_cell
+		WITH (
+			address_width = 5,
+			data_width = 1,
+			first_address = 0,
+			first_bit_number = 1,
+			last_address = 31,
+			logical_ram_depth = 32,
+			logical_ram_name = "ALTDPRAM_INSTANCE",
+			logical_ram_width = 3,
+			mixed_port_feed_through_mode = "dont care"
+		);
+	lutrama2 : tennm_mlab_cell
+		WITH (
+			address_width = 5,
+			data_width = 1,
+			first_address = 0,
+			first_bit_number = 2,
+			last_address = 31,
+			logical_ram_depth = 32,
+			logical_ram_name = "ALTDPRAM_INSTANCE",
+			logical_ram_width = 3,
+			mixed_port_feed_through_mode = "dont care"
+		);
+	rdaddr_reg[4..0] : dffe;
+	datain_wire[2..0]	: WIRE;
+	dataout_latch[2..0]	: WIRE;
+	dataout_wire[2..0]	: WIRE;
+	rdaddr_wire[4..0]	: WIRE;
+	wr_en	: WIRE;
+	wraddr_wire[4..0]	: WIRE;
+
+BEGIN 
+	lutrama[2..0].clk0 = clock0;
+	lutrama[2..0].ena0 = wr_en;
+	lutrama[2..0].portaaddr[4..0] = wraddr_wire[4..0];
+	lutrama[0].portadatain[0..0] = datain_wire[0..0];
+	lutrama[1].portadatain[0..0] = datain_wire[1..1];
+	lutrama[2].portadatain[0..0] = datain_wire[2..2];
+	lutrama[2..0].portbaddr[4..0] = rdaddr_wire[4..0];
+	rdaddr_reg[].clk = clock0;
+	rdaddr_reg[].d = address_b[];
+	datain_wire[] = data_a[];
+	dataout_latch[] = dataout_wire[];
+	dataout_wire[] = lutrama[2..0].portbdataout[];
+	q_b[] = dataout_latch[];
+	rdaddr_wire[] = rdaddr_reg[].q;
+	wr_en = wren_a;
+	wraddr_wire[] = address_a[];
+END;
+--VALID FILE

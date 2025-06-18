@@ -1,0 +1,9 @@
+# **************************************************
+# Quartus Prime Version 24.3.1
+# Process ID 16292
+# Start logging TCL commands
+# Mon Jun 2 16:08:00 2025
+# **************************************************
+project_open "C:/LPDDR_test/baseline_3906/qii/ed_synth.qpf" -revision ed_synth
+flng::run_flow_command -flow "compile"
+flng::run_flow_command -flow "compile"

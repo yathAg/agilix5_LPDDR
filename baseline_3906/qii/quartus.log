@@ -1,0 +1,24 @@
+# **************************************************
+# Quartus Prime Version 24.3.1
+# Process ID 16292
+# Start logging UI actions
+# Mon Jun 2 16:08:00 2025
+# **************************************************
+[Mon Jun  2 16:08:01 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Jun  2 16:08:14 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > 'Start &Compilation' was pressed
+[Mon Jun  2 16:08:14 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Jun  2 16:10:17 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | &Assignments > 'Pi&n Planner' was pressed
+[Mon Jun  2 16:10:20 2025] [Action triggered] Window title: 'Pin Planner Pro Edition' | 'Selection Tool' was checked
+[Mon Jun  2 16:10:25 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > '&Stop Processing' was pressed
+[Mon Jun  2 16:10:27 2025] Window title: 'Quartus Prime' | QPushButton '&Yes' pressed!
+[Mon Jun  2 16:10:33 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | &Assignments > 'Pi&n Planner' was pressed
+[Mon Jun  2 16:10:34 2025] [Action triggered] Window title: 'Pin Planner Pro Edition' | 'Selection Tool' was checked
+[Mon Jun  2 16:11:28 2025] Window title: 'Pin Planner - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | 'pplq_table_delegate' combo box changed to: 'PIN_BW78'
+[Mon Jun  2 16:11:36 2025] Window title: 'Pin Planner - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | 'pplq_table_delegate' combo box changed to: 'PIN_BH89'
+[Mon Jun  2 16:11:47 2025] Window title: 'Pin Planner - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | 'pplq_table_delegate' combo box changed to: 'PIN_D8'
+[Mon Jun  2 16:11:51 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > 'Start &Compilation' was pressed
+[Mon Jun  2 16:11:52 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | P&rocessing > 'Compilation Dashboard' was pressed
+[Mon Jun  2 16:15:13 2025] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | QCheckBox '' was checked
+[Mon Jun  2 16:22:32 2025] Window title: 'Report Clock Domain Crossing Viewer' | QCheckBox 'Report panel name:' was checked
+[Mon Jun  2 16:22:32 2025] Window title: 'Report Clock Domain Crossing Viewer' | 'File options': QRadioButton 'Overwrite' was checked
+[Mon Jun  2 16:23:02 2025] [Action triggered] Window title: 'Quartus Prime Pro Edition - C:/LPDDR_test/baseline_3906/qii/ed_synth - ed_synth [*]' | &Tools > '&Programmer' was pressed

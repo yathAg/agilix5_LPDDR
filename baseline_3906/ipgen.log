@@ -1,0 +1,275 @@
+Ran Command: exec C:/intelfpga_pro/24.3.1/quartus/sopc_builder/bin/qsys-script --pro --quartus-project=none --cmd=\"source C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen//params.tcl\" --script=C:/intelfpga_pro/24.3.1/quartus/../ip/altera/emif_io96b/ip_emif/ex_design/make_qsys.tcl {}
+***************************************************************
+Quartus is a registered trademark of Intel Corporation in the
+US and other countries.  Portions of the Quartus Prime software
+code, and other portions of the code included in this download
+or on this DVD, are licensed to Intel Corporation and are the
+copyrighted property of third parties. For license details,
+refer to the End User License Agreement at
+http://fpgasoftware.intel.com/eula.
+***************************************************************
+
+EMIF Make Qsys: configuring the synthesis ex-design took 20961ms.
+EMIF Make Qsys: configuring the simulation ex-design took 7585ms.
+2025.06.02.16:06:02 Info: Doing: qsys-script --pro --quartus-project=none --cmd=source C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen//params.tcl --script=C:/intelfpga_pro/24.3.1/quartus/../ip/altera/emif_io96b/ip_emif/ex_design/make_qsys.tcl --1
+2025.06.02.16:06:07 Info: set_project_property DEVICE_FAMILY Agilex 5
+2025.06.02.16:06:07 Info: set_project_property DEVICE A5ED065BB32AE6SR0
+2025.06.02.16:06:07 Info: create_system 
+2025.06.02.16:06:07 Info: save_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_synth.qsys
+2025.06.02.16:06:07 Info: load_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_synth.qsys
+2025.06.02.16:06:07 Info: add_component emif_io96b_lpddr4_0 ed_synth_emif_io96b_lpddr4_0.ip emif_io96b_lpddr4
+2025.06.02.16:06:14 Info: emif_io96b_lpddr4_0: Generic Component instance footprint reloaded.
+2025.06.02.16:06:14 Info: load_component emif_io96b_lpddr4_0
+2025.06.02.16:06:15 Info: set_component_parameter_values PHY_TERM_X_CK_OUTPUT_IO_STD_TYPE DF_LVSTL MEM_CHANNEL_CAPACITY_GBITS 32.0 TURNAROUND_R2R_DIFFCS_CYC 0 EX_DESIGN_USER_PLL_OUTPUT_FREQ_MHZ_AUTOSET_EN true PHY_TERM_X_R_T_DQ_INPUT_OHM RT_50_OHM_CAL MEM_ODT_CA_X_CA_ENABLE true MEM_NUM_CHANNELS 1 MEM_CA_VREF 13 MEM_TCSCKE_NS 1.75 JEDEC_OVERRIDE_TABLE_PARAM_NAME MEM_TRFCAB_NS MEM_TRFCPB_NS MEM_TCCD_NS MEM_TREFI_NS MEM_TCKELCK_NS MEM_TMRR_NS SYSINFO_DEVICE_GROUP B MEM_VREF_DQ_X_RANGE 1 MEM_TDQSCK_MIN_NS 1.5 MEM_CWL_CYC 12 PHY_TERM_X_R_S_DQ_OUTPUT_OHM SERIES_40_OHM_CAL PHY_TERM_X_R_T_GPIO_INPUT_OHM RT_OFF SYSINFO_BOARD Agilex 5 FPGA E-Series 065B Premium Development Kit DK-A5E065BB32AES1 MEM_ROW_ADDR_WIDTH 17 EX_DESIGN_PMON_EN false MEM_MINNUMREFSREQ 8192.0 PHY_MAINBAND_ACCESS_MODE ASYNC EX_DESIGN_USER_PLL_REFCLK_FREQ_MHZ 100.0 MEM_CHANNEL_DATA_DQ_WIDTH 32 MEM_ODT_DQ_X_TGT_WR 5 MEM_CL_CYC 14 SYSINFO_DEVICE_DIE_REVISIONS MAIN_SM7_REVA TURNAROUND_W2R_SAMECS_CYC 0 MEM_CK_WIDTH 1 MEM_TMRD_NS 14.0 TURNAROUND_W2W_SAMECS_CYC 0 TURNAROUND_W2R_DIFFCS_CYC 0 TURNAROUND_W2W_DIFFCS_CYC 0 EX_DESIGN_PMON_INTERNAL_JAMB_EN true MEM_TMRR_NS 10.0 MEM_TWR_NS 18.0 MEM_DQ_VREF 20 PHY_TERM_X_DQ_SLEW_RATE FASTEST S2_AXID_WIDTH 7 MEM_TWTR_NS 10.0 SYSINFO_SUPPORTS_VID 0 PHY_TERM_X_REFCLK_IO_STD_TYPE TRUE_DIFF MEM_VREF_CA_X_CA_VALUE 27.2 MEM_CKE_WIDTH 1 PHY_TERM_X_GPIO_IO_STD_TYPE LVCMOS MEM_CHANNEL_CS_WIDTH 1 MEM_TECH_IS_X false MEM_COL_ADDR_WIDTH 10 MEM_TFAW_NS 40.0 MEM_TCSCKEH_NS 1.75 CTRL_ECC_INLINE_EN false MEM_TMRW_NS 13.0 EX_DESIGN_PMON_CH0_EN false MEM_DIE_DENSITY_GBITS 16 PHY_TERM_X_DQS_IO_STD_TYPE DF_LVSTL MEM_TSR_NS 15.0 MEM_TCKELCK_NS 6.25 CTRL_PERFORMANCE_PROFILE default MEM_WLS 1.0 DEBUG_TOOLS_EN true MEM_TZQCAL_NS 1000.0 AXI4_ADDR_WIDTH 32 MEM_TRC_NS 63.0 ADV_CAL_ENABLE_REQ true MEM_CA_WIDTH 6 MEM_TRPPB_NS 18.0 ADV_CAL_ENABLE_MARGIN true NUM_IO96_IN_CHIP 4 MEM_TZQLAT_NS 30.0 S0_AXID_WIDTH 7 PHY_AC_PLACEMENT BOT MEM_ODT_CA_X_CS_ENABLE true ADV_CAL_ENABLE_RD_DFE true MEM_TRRD_NS 10.0 PHY_TERM_X_R_S_CK_OUTPUT_OHM SERIES_40_OHM_CAL ANALOG_PARAM_DERIVATION_PARAM_NAME  MEM_TXP_NS 7.5 MEM_VREF_CA_X_CA_RANGE 2 MEM_TDQSCK_MAX_NS 3.5 MEM_TRTP_NS 10.0 MEM_TRAS_NS 42.0 EX_DESIGN_PMON_CH1_EN false CTRL_ECC_AUTOCORRECT_EN false MEM_TPPD_CYC 4.0 EX_DESIGN_TG_CSR_ACCESS_MODE JTAG SYSINFO_DEVICE A5ED065BB32AE6SR0 MEM_ODT_DQ_X_IDLE off PHY_TERM_X_CS_OUTPUT_IO_STD_TYPE LVSTL MEM_PER_BANK_REF_EN 1 CTRL_SCRAMBLER_EN false DIAG_FORCE_SLIM_EN false MEM_BANK_ADDR_WIDTH 3 PHY_REFCLK_ADVANCED_SELECT_EN true EX_DESIGN_HDL_FORMAT VERILOG PHY_TERM_X_R_S_CS_OUTPUT_OHM SERIES_40_OHM_CAL EX_DESIGN_GEN_CDC false SYSINFO_DEVICE_POWER_MODEL STANDARD_POWER_FIXED PHY_SWIZZLE_MAP BYTE_SWIZZLE_CH0=32XXXX10; PIN_SWIZZLE_CH0_DQS0=32105476; PIN_SWIZZLE_CH0_DQS1=15131412981011; PIN_SWIZZLE_CH0_DQS2=1618171923202221; PIN_SWIZZLE_CH0_DQS3=3130282925242627; MEM_TRPAB_NS 21.0 MEM_OPERATING_FREQ_MHZ 800 EMIF_INST_NAME  S3_AXID_WIDTH 6 MEM_ODT_DQ_X_RON 6 MEM_TESCKE_NS 3.75 PHY_MAINBAND_ACCESS_MODE_AUTOSET_EN true EX_DESIGN_GEN_SYNTH true IS_HPS false DIAG_HMC_ADDR_SWAP_EN false PHY_TERM_X_R_S_AC_OUTPUT_OHM SERIES_40_OHM_CAL PHY_TERM_X_AC_OUTPUT_IO_STD_TYPE LVSTL MEM_TRCD_NS 18.0 MEM_TCKCKEL_NS 6.0 PHY_SIDEBAND_ACCESS_MODE FABRIC MEM_WR_POSTAMBLE_CYC 0 EX_DESIGN_PMON_CH2_EN false PHY_TERM_X_DQ_VREF 17.5 MEM_TXSR_NS 387.5 CTRL_WR_DBI_EN false MEM_TMRWCKEL_NS 14.0 PHY_SIDEBAND_ACCESS_MODE_AUTOSET_EN true PLACEMENT_SCHEMES LPDDR4_X32_BOT MEM_TCKE_NS 7.5 EX_DESIGN_NOC_PLL_REFCLK_FREQ_MHZ 100 MEM_CHANNEL_ADDR_NUM_BITS 35 MEM_TRFCPB_NS 190.0 ADV_CAL_ENABLE_WR_DFE true MEM_ODT_CA_X_CA_COMM 3 MEM_TCKELCMD_NS 6.0 MEM_TCCD_NS 10.0 S1_AXID_WIDTH 6 SYSINFO_DEVICE_FAMILY Agilex 5 MEM_DQ_PER_DQS 8 ADV_CAL_ENABLE_WEQ true PHY_REFCLK_FREQ_MHZ_AUTOSET_EN false MEM_VREF_DQ_X_VALUE 18.0 CTRL_AUTO_PRECHARGE_EN false MEM_TCKCKEH_NS 3.75 SYSINFO_DEVICE_IOBANK_REVISION IO96B MEM_TCKEHCMD_NS 7.5 CTRL_DM_EN false SYSINFO_BOARD_TRAIT  MEM_OPERATING_FREQ_MHZ_AUTOSET_EN true PHY_REFCLK_FREQ_MHZ 100.0 SYSINFO_DEVICE_TEMPERATURE_GRADE EXTENDED PHY_TERM_X_DQ_IO_STD_TYPE LVSTL MEM_RD_POSTAMBLE_CYC 0 CTRL_RD_DBI_EN false SYSINFO_DEVICE_SPEEDGRADE 6 EX_DESIGN_PMON_CH3_EN false INSTANCE_ID 0 MEM_RD_PREAMBLE_CYC 0 MEM_NUM_CHANNELS_PER_IO96 1 EX_DESIGN_TG_PROGRAM INFINITE MEM_TREFI_NS 3906.0 TURNAROUND_R2W_DIFFCS_CYC 0 EX_DESIGN_USER_PLL_OUTPUT_FREQ_MHZ 220.0 MEM_NUM_IO96 1 DIAG_EXTRA_PARAMETERS  PHY_TERM_X_R_T_REFCLK_INPUT_OHM RT_DIFF MEM_ODT_CA_X_CK_ENABLE true MEM_TREFW_NS 3.2E7 MEM_TCMDCKE_NS 3.75 MEM_CS_WIDTH 1 MEM_TZQCKE_NS 3.75 SYSINFO_DEVICE_BASE_DIE SM7 MEM_TRFCAB_NS 380.0 EX_DESIGN_GEN_SIM true TURNAROUND_R2R_SAMECS_CYC 0 TURNAROUND_R2W_SAMECS_CYC 0
+2025.06.02.16:06:15 Info: get_component_interfaces 
+2025.06.02.16:06:15 Info: save_component 
+2025.06.02.16:06:15 Info: add_component axil_driver_0 ed_synth_axil_driver_0.ip emif_ph2_axil_driver
+2025.06.02.16:06:16 Info: axil_driver_0: Generic Component instance footprint reloaded.
+2025.06.02.16:06:16 Info: load_component axil_driver_0
+2025.06.02.16:06:16 Info: set_component_parameter_value AXIL_DRIVER_ADDRESS_WIDTH 27
+2025.06.02.16:06:16 Info: save_component 
+2025.06.02.16:06:16 Info: add_component traffic_generator ed_synth_traffic_generator.ip hydra
+2025.06.02.16:06:20 Info: traffic_generator: Generic Component instance footprint reloaded.
+2025.06.02.16:06:20 Info: load_component traffic_generator
+2025.06.02.16:06:21 Info: set_component_parameter_value IS_SIMULATION 0
+2025.06.02.16:06:21 Info: set_component_parameter_value IOPLL_REF_CLK_FREQ_MHZ 392
+2025.06.02.16:06:21 Info: set_component_parameter_value CONFIG_INTF_MODE CONFIG_INTF_MODE_REMOTE_JTAG
+2025.06.02.16:06:21 Info: set_component_parameter_value REMOTE_INTF_PRODUCE_CLK_RESET false
+2025.06.02.16:06:21 Info: set_component_parameter_value REMOTE_INTF_CLK_FREQ_MHZ 220.0
+2025.06.02.16:06:21 Info: set_component_parameter_value EXPORT_STATUS_INTF false
+2025.06.02.16:06:21 Info: set_component_parameter_value NUM_DRIVERS 1
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_TYPE_ENUM DRIVER_TYPE_MEM_AXI4
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_DATA_DQ_RATIO 8
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ADDR_ALU_ARG_WIDTH 32
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWID_WIDTH 7
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWADDR_WIDTH 32
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWLOCK 1
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWCACHE 1
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWPROT 1
+2025.06.02.16:06:21 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWQOS 0
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWREGION 0
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWUSER 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWUSER_WIDTH 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARID_WIDTH 7
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARADDR_WIDTH 32
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARLOCK 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARCACHE 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARPROT 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARQOS 0
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARREGION 0
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARUSER 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARUSER_WIDTH 1
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_WDATA_WIDTH 256
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_RDATA_WIDTH 256
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_BUSER 0
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_ENABLE_CLOCK_SOURCE false
+2025.06.02.16:06:22 Info: set_component_parameter_value DRIVER_0_ENABLE_RESET_SOURCE false
+2025.06.02.16:06:22 Info: set_component_parameter_value RUN_ON_RESET 0
+2025.06.02.16:06:22 Info: save_component 
+2025.06.02.16:06:23 Info: add_component rrip ed_synth_rrip.ip altera_s10_user_rst_clkgate
+2025.06.02.16:06:24 Info: rrip: Generic Component instance footprint reloaded.
+2025.06.02.16:06:24 Info: load_component rrip
+2025.06.02.16:06:24 Info: set_component_parameter_value outputType Reset Interface
+2025.06.02.16:06:24 Info: save_component 
+2025.06.02.16:06:24 Info: add_component reset_handler ed_synth_reset_handler.ip mem_reset_handler
+2025.06.02.16:06:24 Info: reset_handler: Generic Component instance footprint reloaded.
+2025.06.02.16:06:24 Info: load_component reset_handler
+2025.06.02.16:06:24 Info: set_component_parameter_value NUM_RESETS 1
+2025.06.02.16:06:24 Info: save_component 
+2025.06.02.16:06:24 Info: add_connection rrip.ninit_done reset_handler.reset_n_0
+2025.06.02.16:06:24 Info: load_component reset_handler
+2025.06.02.16:06:24 Info: set_component_parameter_value SYNC_TO_CLK true
+2025.06.02.16:06:24 Info: set_component_parameter_value CONDUIT_TYPE_0 export
+2025.06.02.16:06:24 Info: set_component_parameter_value NUM_CONDUITS 1
+2025.06.02.16:06:24 Info: save_component 
+2025.06.02.16:06:24 Info: add_component user_pll ed_synth_user_pll.ip altera_iopll
+2025.06.02.16:06:26 Info: user_pll: Generic Component instance footprint reloaded.
+2025.06.02.16:06:26 Info: load_component user_pll
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_use_coreclk true
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_use_locked true
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_location_type Fabric-Feeding
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_pll_bandwidth_preset Medium
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_reference_clock_frequency 100.0
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_number_of_clocks 2
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_output_clock_frequency0 220.0
+2025.06.02.16:06:26 Info: set_component_parameter_value gui_output_clock_frequency1 110.0
+2025.06.02.16:06:26 Info: save_component 
+2025.06.02.16:06:26 Info: add_connection rrip.ninit_done user_pll.reset
+2025.06.02.16:06:26 Info: add_connection user_pll.locked reset_handler.conduit_0
+2025.06.02.16:06:26 Info: add_connection user_pll.outclk0 reset_handler.clk
+2025.06.02.16:06:26 Info: add_connection user_pll.outclk1 traffic_generator.remote_intf_clk
+2025.06.02.16:06:26 Info: add_connection reset_handler.reset_n_out traffic_generator.remote_intf_reset
+2025.06.02.16:06:26 Info: add_connection axil_driver_0.cal_done_rst_n traffic_generator.driver0_reset
+2025.06.02.16:06:26 Info: add_connection user_pll.outclk0 traffic_generator.driver0_clk
+2025.06.02.16:06:26 Info: add_connection user_pll.outclk1 axil_driver_0.axil_driver_clk
+2025.06.02.16:06:26 Info: add_connection reset_handler.reset_n_out axil_driver_0.axil_driver_rst_n
+2025.06.02.16:06:27 Info: add_connection traffic_generator.driver0_axi4 emif_io96b_lpddr4_0.s0_axi4
+2025.06.02.16:06:27 Info: add_connection user_pll.outclk0 emif_io96b_lpddr4_0.s0_axi4_clock_in
+2025.06.02.16:06:27 Info: add_connection reset_handler.reset_n_out emif_io96b_lpddr4_0.core_init_n
+2025.06.02.16:06:27 Info: add_connection axil_driver_0.axil_driver_axi4_lite emif_io96b_lpddr4_0.s0_axi4lite
+2025.06.02.16:06:27 Info: add_connection user_pll.outclk1 emif_io96b_lpddr4_0.s0_axi4lite_clock
+2025.06.02.16:06:27 Info: add_connection reset_handler.reset_n_out emif_io96b_lpddr4_0.s0_axi4lite_reset_n
+2025.06.02.16:06:27 Info: add_interface emif_io96b_lpddr4_0_mem_0 conduit end
+2025.06.02.16:06:27 Info: set_interface_property emif_io96b_lpddr4_0_mem_0 EXPORT_OF emif_io96b_lpddr4_0.mem_0
+2025.06.02.16:06:27 Info: add_interface emif_io96b_lpddr4_0_oct_0 conduit end
+2025.06.02.16:06:27 Info: set_interface_property emif_io96b_lpddr4_0_oct_0 EXPORT_OF emif_io96b_lpddr4_0.oct_0
+2025.06.02.16:06:27 Info: add_interface emif_io96b_lpddr4_0_mem_reset_n conduit end
+2025.06.02.16:06:27 Info: set_interface_property emif_io96b_lpddr4_0_mem_reset_n EXPORT_OF emif_io96b_lpddr4_0.mem_reset_n
+2025.06.02.16:06:27 Info: add_interface emif_io96b_lpddr4_0_mem_ck_0 conduit end
+2025.06.02.16:06:27 Info: set_interface_property emif_io96b_lpddr4_0_mem_ck_0 EXPORT_OF emif_io96b_lpddr4_0.mem_ck_0
+2025.06.02.16:06:27 Info: add_interface ref_clk clock end
+2025.06.02.16:06:27 Info: set_interface_property ref_clk EXPORT_OF emif_io96b_lpddr4_0.ref_clk
+2025.06.02.16:06:27 Info: add_interface ref_clk_usr_pll clock end
+2025.06.02.16:06:27 Info: set_interface_property ref_clk_usr_pll EXPORT_OF user_pll.refclk
+2025.06.02.16:06:27 Info: sync_sysinfo_parameters 
+2025.06.02.16:06:27 Info: Synchronizing System Information for emif_io96b_lpddr4_0
+2025.06.02.16:06:27 Info: Synchronizing System Information for axil_driver_0
+2025.06.02.16:06:27 Info: Synchronizing System Information for traffic_generator
+2025.06.02.16:06:27 Info: Synchronizing System Information for rrip
+2025.06.02.16:06:27 Info: Synchronizing System Information for reset_handler
+2025.06.02.16:06:28 Info: Synchronizing System Information for user_pll
+2025.06.02.16:06:28 Info: set_validation_property AUTOMATIC_VALIDATION true
+2025.06.02.16:06:28 Info: set_validation_property AUTOMATIC_VALIDATION false
+2025.06.02.16:06:28 Info: save_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_synth.qsys
+2025.06.02.16:06:28 Info: Info: All modules have been converted to Generic Components.
+2025.06.02.16:06:28 Info: create_system 
+2025.06.02.16:06:28 Info: save_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_sim.qsys
+2025.06.02.16:06:28 Info: load_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_sim.qsys
+2025.06.02.16:06:28 Info: add_component emif_io96b_lpddr4_0 ed_sim_emif_io96b_lpddr4_0.ip emif_io96b_lpddr4
+2025.06.02.16:06:28 Info: emif_io96b_lpddr4_0: Generic Component instance footprint reloaded.
+2025.06.02.16:06:28 Info: load_component emif_io96b_lpddr4_0
+2025.06.02.16:06:29 Info: set_component_parameter_values PHY_TERM_X_CK_OUTPUT_IO_STD_TYPE DF_LVSTL MEM_CHANNEL_CAPACITY_GBITS 32.0 TURNAROUND_R2R_DIFFCS_CYC 0 EX_DESIGN_USER_PLL_OUTPUT_FREQ_MHZ_AUTOSET_EN true PHY_TERM_X_R_T_DQ_INPUT_OHM RT_50_OHM_CAL MEM_ODT_CA_X_CA_ENABLE true MEM_NUM_CHANNELS 1 MEM_CA_VREF 13 MEM_TCSCKE_NS 1.75 JEDEC_OVERRIDE_TABLE_PARAM_NAME MEM_TRFCAB_NS MEM_TRFCPB_NS MEM_TCCD_NS MEM_TREFI_NS MEM_TCKELCK_NS MEM_TMRR_NS SYSINFO_DEVICE_GROUP B MEM_VREF_DQ_X_RANGE 1 MEM_TDQSCK_MIN_NS 1.5 MEM_CWL_CYC 12 PHY_TERM_X_R_S_DQ_OUTPUT_OHM SERIES_40_OHM_CAL PHY_TERM_X_R_T_GPIO_INPUT_OHM RT_OFF SYSINFO_BOARD Agilex 5 FPGA E-Series 065B Premium Development Kit DK-A5E065BB32AES1 MEM_ROW_ADDR_WIDTH 17 EX_DESIGN_PMON_EN false MEM_MINNUMREFSREQ 8192.0 PHY_MAINBAND_ACCESS_MODE ASYNC EX_DESIGN_USER_PLL_REFCLK_FREQ_MHZ 100.0 MEM_CHANNEL_DATA_DQ_WIDTH 32 MEM_ODT_DQ_X_TGT_WR 5 MEM_CL_CYC 14 SYSINFO_DEVICE_DIE_REVISIONS MAIN_SM7_REVA TURNAROUND_W2R_SAMECS_CYC 0 MEM_CK_WIDTH 1 MEM_TMRD_NS 14.0 TURNAROUND_W2W_SAMECS_CYC 0 TURNAROUND_W2R_DIFFCS_CYC 0 TURNAROUND_W2W_DIFFCS_CYC 0 EX_DESIGN_PMON_INTERNAL_JAMB_EN true MEM_TMRR_NS 10.0 MEM_TWR_NS 18.0 MEM_DQ_VREF 20 PHY_TERM_X_DQ_SLEW_RATE FASTEST S2_AXID_WIDTH 7 MEM_TWTR_NS 10.0 SYSINFO_SUPPORTS_VID 0 PHY_TERM_X_REFCLK_IO_STD_TYPE TRUE_DIFF MEM_VREF_CA_X_CA_VALUE 27.2 MEM_CKE_WIDTH 1 PHY_TERM_X_GPIO_IO_STD_TYPE LVCMOS MEM_CHANNEL_CS_WIDTH 1 MEM_TECH_IS_X false MEM_COL_ADDR_WIDTH 10 MEM_TFAW_NS 40.0 MEM_TCSCKEH_NS 1.75 CTRL_ECC_INLINE_EN false MEM_TMRW_NS 13.0 EX_DESIGN_PMON_CH0_EN false MEM_DIE_DENSITY_GBITS 16 PHY_TERM_X_DQS_IO_STD_TYPE DF_LVSTL MEM_TSR_NS 15.0 MEM_TCKELCK_NS 6.25 CTRL_PERFORMANCE_PROFILE default MEM_WLS 1.0 DEBUG_TOOLS_EN true MEM_TZQCAL_NS 1000.0 AXI4_ADDR_WIDTH 32 MEM_TRC_NS 63.0 ADV_CAL_ENABLE_REQ true MEM_CA_WIDTH 6 MEM_TRPPB_NS 18.0 ADV_CAL_ENABLE_MARGIN true NUM_IO96_IN_CHIP 4 MEM_TZQLAT_NS 30.0 S0_AXID_WIDTH 7 PHY_AC_PLACEMENT BOT MEM_ODT_CA_X_CS_ENABLE true ADV_CAL_ENABLE_RD_DFE true MEM_TRRD_NS 10.0 PHY_TERM_X_R_S_CK_OUTPUT_OHM SERIES_40_OHM_CAL ANALOG_PARAM_DERIVATION_PARAM_NAME  MEM_TXP_NS 7.5 MEM_VREF_CA_X_CA_RANGE 2 MEM_TDQSCK_MAX_NS 3.5 MEM_TRTP_NS 10.0 MEM_TRAS_NS 42.0 EX_DESIGN_PMON_CH1_EN false CTRL_ECC_AUTOCORRECT_EN false MEM_TPPD_CYC 4.0 EX_DESIGN_TG_CSR_ACCESS_MODE JTAG SYSINFO_DEVICE A5ED065BB32AE6SR0 MEM_ODT_DQ_X_IDLE off PHY_TERM_X_CS_OUTPUT_IO_STD_TYPE LVSTL MEM_PER_BANK_REF_EN 1 CTRL_SCRAMBLER_EN false DIAG_FORCE_SLIM_EN false MEM_BANK_ADDR_WIDTH 3 PHY_REFCLK_ADVANCED_SELECT_EN true EX_DESIGN_HDL_FORMAT VERILOG PHY_TERM_X_R_S_CS_OUTPUT_OHM SERIES_40_OHM_CAL EX_DESIGN_GEN_CDC false SYSINFO_DEVICE_POWER_MODEL STANDARD_POWER_FIXED PHY_SWIZZLE_MAP BYTE_SWIZZLE_CH0=32XXXX10; PIN_SWIZZLE_CH0_DQS0=32105476; PIN_SWIZZLE_CH0_DQS1=15131412981011; PIN_SWIZZLE_CH0_DQS2=1618171923202221; PIN_SWIZZLE_CH0_DQS3=3130282925242627; MEM_TRPAB_NS 21.0 MEM_OPERATING_FREQ_MHZ 800 EMIF_INST_NAME  S3_AXID_WIDTH 6 MEM_ODT_DQ_X_RON 6 MEM_TESCKE_NS 3.75 PHY_MAINBAND_ACCESS_MODE_AUTOSET_EN true EX_DESIGN_GEN_SYNTH true IS_HPS false DIAG_HMC_ADDR_SWAP_EN false PHY_TERM_X_R_S_AC_OUTPUT_OHM SERIES_40_OHM_CAL PHY_TERM_X_AC_OUTPUT_IO_STD_TYPE LVSTL MEM_TRCD_NS 18.0 MEM_TCKCKEL_NS 6.0 PHY_SIDEBAND_ACCESS_MODE FABRIC MEM_WR_POSTAMBLE_CYC 0 EX_DESIGN_PMON_CH2_EN false PHY_TERM_X_DQ_VREF 17.5 MEM_TXSR_NS 387.5 CTRL_WR_DBI_EN false MEM_TMRWCKEL_NS 14.0 PHY_SIDEBAND_ACCESS_MODE_AUTOSET_EN true PLACEMENT_SCHEMES LPDDR4_X32_BOT MEM_TCKE_NS 7.5 EX_DESIGN_NOC_PLL_REFCLK_FREQ_MHZ 100 MEM_CHANNEL_ADDR_NUM_BITS 35 MEM_TRFCPB_NS 190.0 ADV_CAL_ENABLE_WR_DFE true MEM_ODT_CA_X_CA_COMM 3 MEM_TCKELCMD_NS 6.0 MEM_TCCD_NS 10.0 S1_AXID_WIDTH 6 SYSINFO_DEVICE_FAMILY Agilex 5 MEM_DQ_PER_DQS 8 ADV_CAL_ENABLE_WEQ true PHY_REFCLK_FREQ_MHZ_AUTOSET_EN false MEM_VREF_DQ_X_VALUE 18.0 CTRL_AUTO_PRECHARGE_EN false MEM_TCKCKEH_NS 3.75 SYSINFO_DEVICE_IOBANK_REVISION IO96B MEM_TCKEHCMD_NS 7.5 CTRL_DM_EN false SYSINFO_BOARD_TRAIT  MEM_OPERATING_FREQ_MHZ_AUTOSET_EN true PHY_REFCLK_FREQ_MHZ 100.0 SYSINFO_DEVICE_TEMPERATURE_GRADE EXTENDED PHY_TERM_X_DQ_IO_STD_TYPE LVSTL MEM_RD_POSTAMBLE_CYC 0 CTRL_RD_DBI_EN false SYSINFO_DEVICE_SPEEDGRADE 6 EX_DESIGN_PMON_CH3_EN false INSTANCE_ID 0 MEM_RD_PREAMBLE_CYC 0 MEM_NUM_CHANNELS_PER_IO96 1 EX_DESIGN_TG_PROGRAM INFINITE MEM_TREFI_NS 3906.0 TURNAROUND_R2W_DIFFCS_CYC 0 EX_DESIGN_USER_PLL_OUTPUT_FREQ_MHZ 220.0 MEM_NUM_IO96 1 DIAG_EXTRA_PARAMETERS  PHY_TERM_X_R_T_REFCLK_INPUT_OHM RT_DIFF MEM_ODT_CA_X_CK_ENABLE true MEM_TREFW_NS 3.2E7 MEM_TCMDCKE_NS 3.75 MEM_CS_WIDTH 1 MEM_TZQCKE_NS 3.75 SYSINFO_DEVICE_BASE_DIE SM7 MEM_TRFCAB_NS 380.0 EX_DESIGN_GEN_SIM true TURNAROUND_R2R_SAMECS_CYC 0 TURNAROUND_R2W_SAMECS_CYC 0
+2025.06.02.16:06:29 Info: get_component_interfaces 
+2025.06.02.16:06:29 Info: save_component 
+2025.06.02.16:06:29 Info: add_component axil_driver_0 ed_sim_axil_driver_0.ip emif_ph2_axil_driver
+2025.06.02.16:06:29 Info: axil_driver_0: Generic Component instance footprint reloaded.
+2025.06.02.16:06:29 Info: load_component axil_driver_0
+2025.06.02.16:06:29 Info: set_component_parameter_value AXIL_DRIVER_ADDRESS_WIDTH 27
+2025.06.02.16:06:29 Info: save_component 
+2025.06.02.16:06:30 Info: add_component traffic_generator ed_sim_traffic_generator.ip hydra
+2025.06.02.16:06:30 Info: traffic_generator: Generic Component instance footprint reloaded.
+2025.06.02.16:06:30 Info: load_component traffic_generator
+2025.06.02.16:06:30 Info: set_component_parameter_value IS_SIMULATION 1
+2025.06.02.16:06:30 Info: set_component_parameter_value IOPLL_REF_CLK_FREQ_MHZ 392
+2025.06.02.16:06:30 Info: set_component_parameter_value CONFIG_INTF_MODE CONFIG_INTF_MODE_REMOTE_JTAG
+2025.06.02.16:06:30 Info: set_component_parameter_value REMOTE_INTF_PRODUCE_CLK_RESET false
+2025.06.02.16:06:30 Info: set_component_parameter_value REMOTE_INTF_CLK_FREQ_MHZ 392
+2025.06.02.16:06:30 Info: set_component_parameter_value EXPORT_STATUS_INTF false
+2025.06.02.16:06:30 Info: set_component_parameter_value NUM_DRIVERS 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_TYPE_ENUM DRIVER_TYPE_MEM_AXI4
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_DATA_DQ_RATIO 8
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ADDR_ALU_ARG_WIDTH 32
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWID_WIDTH 7
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWADDR_WIDTH 32
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWLOCK 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWCACHE 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWPROT 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWQOS 0
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWREGION 0
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_AWUSER 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_AWUSER_WIDTH 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARID_WIDTH 7
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARADDR_WIDTH 32
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARLOCK 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARCACHE 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARPROT 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARQOS 0
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARREGION 0
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_ARUSER 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_ARUSER_WIDTH 1
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_WDATA_WIDTH 256
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_RDATA_WIDTH 256
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_MEM_AXI4_USE_BUSER 0
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_ENABLE_CLOCK_SOURCE false
+2025.06.02.16:06:30 Info: set_component_parameter_value DRIVER_0_ENABLE_RESET_SOURCE false
+2025.06.02.16:06:30 Info: set_component_parameter_value RUN_ON_RESET 0
+2025.06.02.16:06:30 Info: save_component 
+2025.06.02.16:06:31 Info: add_component rrip ed_sim_rrip.ip altera_s10_user_rst_clkgate
+2025.06.02.16:06:31 Info: rrip: Generic Component instance footprint reloaded.
+2025.06.02.16:06:31 Info: load_component rrip
+2025.06.02.16:06:31 Info: set_component_parameter_value outputType Reset Interface
+2025.06.02.16:06:31 Info: save_component 
+2025.06.02.16:06:31 Info: add_component reset_handler ed_sim_reset_handler.ip mem_reset_handler
+2025.06.02.16:06:31 Info: reset_handler: Generic Component instance footprint reloaded.
+2025.06.02.16:06:31 Info: load_component reset_handler
+2025.06.02.16:06:31 Info: set_component_parameter_value NUM_RESETS 1
+2025.06.02.16:06:31 Info: save_component 
+2025.06.02.16:06:31 Info: add_connection rrip.ninit_done reset_handler.reset_n_0
+2025.06.02.16:06:31 Info: load_component reset_handler
+2025.06.02.16:06:31 Info: set_component_parameter_value SYNC_TO_CLK true
+2025.06.02.16:06:31 Info: set_component_parameter_value CONDUIT_TYPE_0 export
+2025.06.02.16:06:31 Info: set_component_parameter_value NUM_CONDUITS 1
+2025.06.02.16:06:31 Info: save_component 
+2025.06.02.16:06:31 Info: add_component user_pll ed_sim_user_pll.ip altera_iopll
+2025.06.02.16:06:32 Info: user_pll: Generic Component instance footprint reloaded.
+2025.06.02.16:06:32 Info: load_component user_pll
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_use_coreclk true
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_use_locked true
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_location_type Fabric-Feeding
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_pll_bandwidth_preset Medium
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_reference_clock_frequency 392
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_number_of_clocks 2
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_output_clock_frequency0 392
+2025.06.02.16:06:32 Info: set_component_parameter_value gui_output_clock_frequency1 196
+2025.06.02.16:06:32 Info: save_component 
+2025.06.02.16:06:32 Info: add_connection rrip.ninit_done user_pll.reset
+2025.06.02.16:06:32 Info: add_connection user_pll.locked reset_handler.conduit_0
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk0 reset_handler.clk
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk1 traffic_generator.remote_intf_clk
+2025.06.02.16:06:32 Info: add_connection reset_handler.reset_n_out traffic_generator.remote_intf_reset
+2025.06.02.16:06:32 Info: add_connection axil_driver_0.cal_done_rst_n traffic_generator.driver0_reset
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk0 traffic_generator.driver0_clk
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk1 axil_driver_0.axil_driver_clk
+2025.06.02.16:06:32 Info: add_connection reset_handler.reset_n_out axil_driver_0.axil_driver_rst_n
+2025.06.02.16:06:32 Info: add_connection traffic_generator.driver0_axi4 emif_io96b_lpddr4_0.s0_axi4
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk0 emif_io96b_lpddr4_0.s0_axi4_clock_in
+2025.06.02.16:06:32 Info: add_connection reset_handler.reset_n_out emif_io96b_lpddr4_0.core_init_n
+2025.06.02.16:06:32 Info: add_connection axil_driver_0.axil_driver_axi4_lite emif_io96b_lpddr4_0.s0_axi4lite
+2025.06.02.16:06:32 Info: add_connection user_pll.outclk1 emif_io96b_lpddr4_0.s0_axi4lite_clock
+2025.06.02.16:06:32 Info: add_connection reset_handler.reset_n_out emif_io96b_lpddr4_0.s0_axi4lite_reset_n
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_mem_0
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_oct_0
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_mem_ck_0
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_mem_reset_n
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_i3c
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_lbd
+2025.06.02.16:06:32 Info: remove_interface emif_io96b_lpddr4_0_lbs
+2025.06.02.16:06:32 Info: remove_interface ref_clk_usr_pll
+2025.06.02.16:06:32 Info: remove_interface rst_n
+2025.06.02.16:06:32 Info: add_component mem ed_sim_mem.ip emif_io96b_mem_model_lpddr4
+2025.06.02.16:06:32 Info: mem: Generic Component instance footprint reloaded.
+2025.06.02.16:06:32 Info: load_component mem
+2025.06.02.16:06:32 Info: set_component_parameter_values MEM_COL_ADDR_WIDTH 10 MEM_TPPD_CYC 4.0 MEM_TRPPB_NS 18.0 MEM_TMRR_NS 10.0 MEM_MINNUMREFSREQ 8192.0 MEM_TMRW_NS 13.0 MEM_CK_C_WIDTH 1 MEM_TZQLAT_NS 30.0 MEM_TFAW_NS 40.0 MEM_TRPAB_NS 21.0 MEM_CK_T_WIDTH 1 MEM_RESET_N_WIDTH 1 MEM_DQS_C_WIDTH 4 MEM_TZQCAL_NS 1000.0 MEM_TCSCKEH_NS 1.75 MEM_CKE_WIDTH 1 MEM_TCKCKEL_NS 6.0 MEM_DQS_T_WIDTH 4 MEM_TCCD_NS 10.0 MEM_TRTP_NS 10.0 MEM_TMRD_NS 14.0 MEM_TRFCPB_NS 190.0 MEM_TXP_NS 7.5 MEM_TXSR_NS 387.5 MEM_TRFCAB_NS 380.0 MEM_NUM_RANKS 1 MEM_TCKE_NS 7.5 MEM_TWR_NS 18.0 MEM_NUM_CHANNELS 1 MEM_BA_WIDTH 3 MEM_RD_POSTAMBLE_CYC 0 MEM_TZQCKE_NS 3.75 MEM_TCKCKEH_NS 3.75 MEM_TDQSCK_MIN_NS 1.5 MEM_TSR_NS 15.0 MEM_CA_WIDTH 6 MEM_TWTR_NS 10.0 MEM_CS_WIDTH 1 MEM_TREFW_NS 3.2E7 MEM_TRAS_NS 42.0 MEM_TRC_NS 63.0 MEM_DQ_WIDTH 32 MEM_TCMDCKE_NS 3.75 MEM_TCSCKE_NS 1.75 MEM_TCKELCMD_NS 6.0 MEM_TCKEHCMD_NS 7.5 MEM_DMI_WIDTH 4 MEM_TMRWCKEL_NS 14.0 MEM_TCKELCK_NS 6.25 MEM_TRRD_NS 10.0 MEM_ROW_ADDR_WIDTH 17 MEM_TDQSCK_MAX_NS 3.5 MEM_CL_CYC 14 MEM_TREFI_NS 3906.0 MEM_WR_POSTAMBLE_CYC 0 MEM_TESCKE_NS 3.75 MEM_CWL_CYC 12 MEM_TRCD_NS 18.0
+2025.06.02.16:06:32 Info: save_component 
+2025.06.02.16:06:33 Info: add_connection mem.mem_0 emif_io96b_lpddr4_0.mem_0
+2025.06.02.16:06:33 Info: add_connection mem.mem_ck_0 emif_io96b_lpddr4_0.mem_ck_0
+2025.06.02.16:06:33 Info: add_connection mem.mem_reset_n emif_io96b_lpddr4_0.mem_reset_n
+2025.06.02.16:06:33 Info: add_connection mem.oct_0 emif_io96b_lpddr4_0.oct_0
+2025.06.02.16:06:33 Info: add_component ref_clk_source_0 ed_sim_ref_clk_source_0.ip altera_avalon_clock_source
+2025.06.02.16:06:33 Info: ref_clk_source_0: Generic Component instance footprint reloaded.
+2025.06.02.16:06:33 Info: load_component ref_clk_source_0
+2025.06.02.16:06:33 Info: set_component_parameter_value CLOCK_RATE 100000000
+2025.06.02.16:06:33 Info: set_component_parameter_value CLOCK_UNIT 1
+2025.06.02.16:06:33 Info: save_component 
+2025.06.02.16:06:33 Info: add_connection ref_clk_source_0.clk emif_io96b_lpddr4_0.ref_clk
+2025.06.02.16:06:33 Info: add_component async_clk_source ed_sim_async_clk_source.ip altera_avalon_clock_source
+2025.06.02.16:06:33 Info: async_clk_source: Generic Component instance footprint reloaded.
+2025.06.02.16:06:33 Info: load_component async_clk_source
+2025.06.02.16:06:33 Info: set_component_parameter_value CLOCK_RATE 392000000
+2025.06.02.16:06:33 Info: set_component_parameter_value CLOCK_UNIT 1
+2025.06.02.16:06:33 Info: save_component 
+2025.06.02.16:06:33 Info: add_connection async_clk_source.clk user_pll.refclk
+2025.06.02.16:06:33 Info: sync_sysinfo_parameters 
+2025.06.02.16:06:33 Info: Synchronizing System Information for emif_io96b_lpddr4_0
+2025.06.02.16:06:34 Info: Synchronizing System Information for axil_driver_0
+2025.06.02.16:06:34 Info: Synchronizing System Information for traffic_generator
+2025.06.02.16:06:34 Info: Synchronizing System Information for rrip
+2025.06.02.16:06:34 Info: Synchronizing System Information for reset_handler
+2025.06.02.16:06:34 Info: Synchronizing System Information for user_pll
+2025.06.02.16:06:35 Info: Synchronizing System Information for mem
+2025.06.02.16:06:35 Info: Synchronizing System Information for ref_clk_source_0
+2025.06.02.16:06:35 Info: Synchronizing System Information for async_clk_source
+2025.06.02.16:06:35 Info: set_validation_property AUTOMATIC_VALIDATION true
+2025.06.02.16:06:35 Info: set_validation_property AUTOMATIC_VALIDATION false
+2025.06.02.16:06:35 Info: save_system C:/Users/agarw414/AppData/Local/Temp/alt0241_17663816786152718782.dir/0001_emif_io96b_lpddr4_0_gen/ed_sim.qsys
+2025.06.02.16:06:35 Info: Info: All modules have been converted to Generic Components.
