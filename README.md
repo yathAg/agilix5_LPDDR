@@ -1,1 +1,15 @@
 # agilix5_LPDDR
+
+Top level Module serach index:
+
+Design entry: `ed_synth_emif_io96b_lpddr4_0` in ed_synth.v
+
+ed_synth_emif_io96b_lpddr4_0 in ed_synth_emif_io96b_lpddr4_0.v
+
+ed_synth_emif_io96b_lpddr4_0_emif_io96b_lpddr4_200_hyctmiq in ed_synth_emif_io96b_lpddr4_0_emif_io96b_lpddr4_200_hyctmiq.sv -> main module
+
+io0_ed_synth_emif_io96b_lpddr4_0_emif_io96b_lpddr4_200_hyctmiq_io96b_top
+
+Jdec Params in ed_synth_emif_io96b_lpddr4_0_emif_io96b_lpddr4_200_hyctmiq_jedec_params.sv
+
+Pattern gen emif_tg_emulation_inf
